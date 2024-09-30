@@ -1,0 +1,515 @@
+
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1],
+            id: "\\operatorname{id}",
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
+      } */
+      body.fondo-body{
+        counter-reset: temaCounter 3 sectionCounter;
+      }
+
+      /* h1.page-number-title
+      {
+      counter-reset: sectionCounter 0;
+      }  */
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 2;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+    </style>
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo UNO</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaria</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Ejercicios tercer examen parcial </title>
+      </head>  
+
+
+
+      <body class="fondo-body" ><h1 class="page-title-practica"> Prácticas Tercer Examen Parcial </h1>   
+
+    <!-- <div class="nota-box"><h1 class="title"> Archivos</h1> 
+      <div class="links-box" style = "font-family: 'Oldenburg', cursive; font-size: 150%;">
+        <a href="../Archivos/EP1-GrupoA.xlsx" download> EP1-GrupoA.xlsx</a><br>
+        <a href="../Archivos/EP1-GrupoC.xlsx" download> EP1-GrupoC.xlsx</a>
+      </div>
+      </div> -->
+     
+        
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>En los siguientes ejercicios se dan funciones de costo total, donde $c$ es el costo de producir $q$ 
+      unidades de un producto. Para cada caso encuentre la función de costo marginal. ¿Cuál es el costo
+      marginal para el valor o valores dados de $q$?
+    </p>
+    <ol>
+        <li>
+            \(c = 500 + 10q;\ q = 100\)
+        </li><br>
+        <li>
+            \(c = 5000 + 6q;\ q = 36\)
+        </li><br>
+        <li>
+            \(c = 0.1q^2 + 3q + 450;\ q = 5\)
+        </li><br>
+        <li>
+            \(c = 0.1q^2 + 3q + 2;\ q = 3\)
+        </li><br>
+        <li>
+            \(c = q^2 + 50q + 1000;\ q = 15, \ q = 16, \ q = 17\)
+        </li><br>
+        <li>
+            \(c = 0.04q^3 - 0.5q^2 + 4.4q + 7500;\ q = 5, \ q = 25, \ q = 1000\)
+        </li><br>
+    </ol>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>En los siguientes problemas $\overline{c}$ representa el costo promedio por unidad, que es una función
+      del número $q$ de unidades producidas. Encuentre la función de costo marginal y el costo marginal para los
+      valores indicados de $q$.</p>
+    <ol>
+        <li>
+            \(\bar{c} = 0.01q + 5 + \displaystyle{\frac{500}{q}}; \ q = 50, \ q = 100\)
+        </li><br>
+        <li>
+            \(\bar{c} = 2 + \displaystyle{\frac{1000}{q}}; \ q = 25, \ q = 235\)
+        </li><br>
+        <li>
+            \(\bar{c} = 0.00002q^2 - 0.01q + 6 + \displaystyle{\frac{20000}{q}}; \ q = 100, \ q = 500\)
+        </li><br>
+        <li>
+            \(\bar{c} = 0.002q^2 - 0.5q + 60 + \displaystyle{\frac{7000}{q}}; \ q = 15, \ q = 25\)
+        </li><br>
+    </ol>
+</div>
+
+
+<div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+
+<p>En los siguientes ejercicios $r$ representa el ingreso total y es una función del número $q$ de unidades
+  vendidas. Encuentre la función de ingreso marginal y el ingreso marginal para los valores indicados de $q$.
+</p>
+  <ol>
+      <li>
+          \(r = 0.8q;\ q = 9, \ q = 300, \ q = 500\)
+      </li><br>
+      <li>
+          \(r = q\left(15 - \displaystyle{\frac{1}{30}}q\right);\ q = 5, \ q = 15, \ q = 150\)
+      </li><br>
+      <li>
+          \(r = 250q + 45q^2 - q^3;\ q = 5, \ q = 10, \ q = 25\)
+      </li><br>
+      <li>
+          \(r = 2q(30 - 0.1q);\ q = 10, \ q = 20\)
+      </li><br>
+  </ol>
+  </div>
+
+  <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+  <p>La función de costo total de una fábrica de calcetas es estimada por Mariana como
+    $$c(q) = -10 484.69  +  6.750q -  0.000328q^{2}$$
+    donde $q$ es la producción en docenas de pares y $c$ el costo total en dólares.
+    Encuentre la función de costo marginal y la función de costo promedio, y evalúela cada una cuando $q =  2000$.</p>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+      Encuentre la antiderivada de la función dada:
+    </p>
+    <ol class="two-column">
+      <li> \( \displaystyle{f^{'}(x) = 80} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = -50} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = \frac{1}{5}} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = \sqrt{70}} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 3x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = -6x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = \frac{x^2}{2}} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^2} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^4} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = \frac{x^3}{3}} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^2 - 4x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^3 + x^2 + 6x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^2 + 8x + 10} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^5} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 9x^2 + 10x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 6x^2 + 2x + 20} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 3x^2 + 18x + 12} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 18x^2 - 10x - 100} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 8x^3 - 6x^2} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 4x^3 - 3x^2} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 12x^3 - 9x^2 + 3} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = x^3 + x^2 - 4x + 1} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 5x^4 - 9x^2 - 6} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 20x^4 + 8x^3 - 4x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 30x^4 - 2x^3 + 8x - 5} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 15x^4 - 6x^3 + 2x - 8} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = \sqrt{2x^3}} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = \frac{x^3}{2}} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = -18x^5 + 9x^2 - 10x} \) </li><br> 
+      <li> \( \displaystyle{f^{'}(x) = 36x^5 - 15x^4 + 3x^2} \) </li>
+    </ol>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Determine $f$ si se conoce $f^{'}$ y un punto que se encuentra en la gráfica de  $f$.
+      <ol class="two-column">
+        <li> $\displaystyle{f^{'}(x) = 20, \ (1, 20)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = -8x + 2, \ (2, 10)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 10x, \ (-2, 10)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = x^2, \ (-4, 26)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 4x^3, \ (2, 15)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = -2x^3, \ (6, 10)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = -x^2 + 4x, \ (3, 45)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = x^2 + 2x - 3, \ (-3, 8)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 6x^2 + 8x, \ (2, -20)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 5x^4, \ (-5, 48)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 9x^2 + 2x, \ (-2, 2)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 9x^2 - 4x + 2, \ (-8, -20)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 4x^3 - 3x^2 + 2x, \ (3, 80)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = x^3 - x^2 + x + 3, \ (-1, 0)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 8x^3 - 3x^2, \ (2, 8)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 5x^4 - 6x^2, \ (5, 140)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = -4x^3 - 12x, \ (-5, 40)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = -8x^3 + 6x^2, \ (-6, 28)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 6x^5 - 3x^2, \ (1, 10)}$ </li><br>
+        <li> $\displaystyle{f^{'}(x) = 10 - x + x^2, \ (2, -7)}$ </li>
+      </ol>
+    </p>
+  </div>
+
+  <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+    <p>Suponga que $p =  100 - \sqrt{q^2 +20}$ es una ecuación de demanda para el producto de un fabricante.
+      <ol>
+        <li>Encuentre la razón de cambio de $p$ con respecto a $q$.</li><br>
+        <li>Determine la función de ingreso marginal.</li>
+      </ol>
+    </p>    
+  </div>
+  <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si la función de costo total de un fabricante 
+      está dada por:
+      $$c(q) = \displaystyle{\frac{5q^2}{\sqrt{q^{2}+3}} + 5000} $$
+      Encuentre la función de costo marginal.
+    </p>
+  </div>
+
+  <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si la función de costo total de un fabricante 
+      está dada por:
+      $$c(q) = \displaystyle{\frac{6q^2}{q+2} + 6000} $$
+      Encuentre la función de costo marginal.
+    </p>
+  </div>
+
+  <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+    <p>El costo de producir q unidades de un producto está dado por
+        $$c = 5500 + 12q + 0.2q^2$$
+       Si el precio de p unidades está dado por la ecuación
+        $$q = 900 - 1.5p $$
+      utilice la regla de la cadena para encontrar la razón de cambio
+      del costo con respecto al precio unitario cuando $p = 85$.
+    </p>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si \( \displaystyle{r = q(20 - 0.1q)} \) es una función de ingreso total, encuentre la función de ingreso marginal.</p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si \( \displaystyle{c = 0.0001q^3 - 0.02q^2 + 3q + 6000} \) es una función de costo total, encuentre el costo marginal cuando \( q = 100 \).</p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si \( \displaystyle{C = 7 + 0.6I - 0.25\sqrt{I}} \) es una función de consumo, encuentre la propensión marginal al consumo y al ahorro cuando \( I = 16 \).</p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si \( \displaystyle{p = \frac{q + 12}{q + 5}} \) es una ecuación de demanda, encuentre la razón de cambio del precio \( p \) con respecto a la cantidad \( q \).</p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si \( \displaystyle{p = -0.1q + 500} \) es una ecuación de demanda, encuentre la función de ingreso marginal.</p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Si \( \displaystyle{\bar{c} = 0.03q + 1.2 + \frac{3}{q}} \) es una función de costo promedio, encuentre el costo marginal cuando \( q = 100 \).</p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>La función de costo total de una planta de energía eléctrica se estima mediante la ecuación
+    \[
+    \displaystyle{c = 16.68 + 0.125q + 0.00439q^2}, \quad 20 \leq q \leq 90
+    \]
+    donde q es la producción total en 8 horas (como porcentaje de la capacidad) y $c$ es el costo total 
+    del combustible en dólares. Encuentre la función de costo marginal y evalúela cuando $q =70$.
+    </p>
+  </div>
+  
+ 
+
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+      La función de ingreso marginal del producto de una compañía es
+      \[
+      \displaystyle{MR = 40 \,000 - 4x}
+      \]
+      donde \( x \) es el número de unidades vendidas. Si el ingreso total es $0$ cuando no se venden unidades,
+       determine la función de ingreso total del producto.
+    </p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+      La función que describe el costo marginal (en dólares) de la producción de un artículo es
+      \[
+      \displaystyle{MC = 8x + 800}
+      \]
+      donde \( x \) indica el número de unidades producidas. Se sabe que el costo total es de $\$80 \,000$ cuando se fabrican 40 unidades. Calcule la función de costo total.
+    </p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+      La función que describe la utilidad marginal lograda al producir y vender un producto es
+      \[
+      \displaystyle{MP = -6x + 450}
+      \]
+      donde \( x \) es el número de unidades y \( MP \) es la utilidad marginal medida en dólares.
+      Cuando se producen y venden 100 unidades, la utilidad total es de $\$5 \,000$. Encuentre la
+      función de utilidad total.
+    </p>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+      La función que describe la utilidad marginal lograda con la fabricación y venta de un producto es
+      \[
+      \displaystyle{MP = -3x + 500}
+      \]
+      donde \( x \) es el número de unidades y \( MP \) es la utilidad marginal medida en dólares. 
+      Cuando se producen y venden 200 unidades, la utilidad total es de $\$15 \,000$. Determine la función 
+      de utilidad total.
+    </p>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+      En los siguientes ejercicios, encuentre la integral indefinida.
+      <ol class="two-column">
+        <li> \(\displaystyle{\int \sqrt[5]{x} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{2}{\sqrt[3]{x}} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{x^3} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{20}{\sqrt[3]{x^2}} \, dx}\)</li><br>
+        <!-- <li> \(\displaystyle{\int (ax^4 + bx^2) \, dx}\)</li><br>
+        <li> \(\displaystyle{\int (mx + b) \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{a}{b\sqrt[4]{x}} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{b}{\sqrt[5]{x}} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{x^n} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{a}{\sqrt[6]{x}} \, dx}\)</li><br> -->
+        <li> \(\displaystyle{\int 2\sqrt[3]{x} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int 3\sqrt{x} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{\sqrt[5]{x}}{x^3} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int 8\sqrt[4]{x} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{4\sqrt[4]{x}}{3} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{3\sqrt[3]{x}}{2} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{x^4} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int -8 \frac{dx}{x^3} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int 16 \frac{dx}{x^2} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int 3 \frac{dx}{x^3} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{\sqrt{x}} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{\sqrt[3]{x}} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{-15 dx}{\sqrt[5]{x}} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{-2 dx}{\sqrt{x}} \, dx}\)</li><br>
+        <!-- <li> \(\displaystyle{\int (ax^4 + bx^3 + cx^2 + dx + e) \, dx}\)</li><br> -->
+        <li> \(\displaystyle{\int \frac{6 dx}{x^6} \, dx}\)</li><br>
+        <!-- <li> \(\displaystyle{\int (4ax^3 + 3bx^2 + 2cx) \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{ax^2} \, dx}\)</li><br>
+        <li> \(\displaystyle{\int \frac{dx}{ax^n} \, dx}\)</li><br> -->
+        <li> \(\displaystyle{\int \left( \frac{1}{x^2} + \frac{2}{x^3} \right) \, dx}\)</li><br>
+      </ol>
+    </p>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica"> Ejercicio</h1>
+    <p> En los siguientes ejercicios, encuentre la integral indefinida:</p>
+    <ol class="two-column">
+        <li>\(\displaystyle{ \int{7 \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{1}{2x} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{x^8 \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{5x^{24} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{5x^{-7} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{z^{-3}}{3} \, dz} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{2}{x^{10}} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{7}{x^4} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{1}{t^{7/4}} \, dt} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{7}{2x^{9/4}} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{(4 + t) \, dt} }\)</li><br>
+        <li>\(\displaystyle{ \int{(r^3 + 2r) \, dr} }\)</li><br>
+        <li>\(\displaystyle{ \int{(y^5 - 5y) \, dy} }\)</li><br>
+        <li>\(\displaystyle{ \int{(5 - 2w - 6w^2) \, dw} }\)</li><br>
+        <li>\(\displaystyle{ \int{(3t^2 - 4t + 5) \, dt} }\)</li><br>
+        <li>\(\displaystyle{ \int{(1 + t^2 + t^4 + t^6) \, dt} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( -\frac{\sqrt[3]{x^2}}{5} - \frac{7}{2\sqrt{x}} + 6x \right) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( \sqrt[3]{u} + \frac{1}{\sqrt{u}} \right) \, du} }\)</li><br>
+        <li>\(\displaystyle{ \int{(x^2 + 5)(x - 3) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{x^4(x^3 + 8x^2 + 7) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\sqrt{x}(x + 3) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{(z + 2)^2 \, dz} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( \frac{2}{\sqrt{x}} - 1 \right)^2 \, dx} }\)</li><br>
+        <!-- <li>\(\displaystyle{ \int{\left( 6e^u - u^3(\sqrt{u + 1}) \right) \, du} }\)</li><br> -->
+        <li>\(\displaystyle{ \int{\frac{z^4 + 10z^3}{2z^2} \, dz} }\)</li><br>
+        <!-- <li>\(\displaystyle{ \int{\frac{e^x + e^{2x}}{e^x} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{(7 + e) \, dx} }\)</li><br> -->
+        <li>\(\displaystyle{ \int{(5 - 2^{-1}) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( \frac{x}{7} - \frac{3}{4}x^4 \right) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( \frac{2x^2}{7} - \frac{8}{3}x^4 \right) \, dx} }\)</li><br>
+        <!-- <li>\(\displaystyle{ \int{\pi e^x \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{e^x}{3} + 2x \, dx} }\)</li><br> -->
+        <li>\(\displaystyle{ \int{x^8.3 - 9x^6 + 3x^{-4} + x^{-3} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{(0.7y^3 + 10 + 2y^{-3}) \, dy} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{-2\sqrt{x}}{3} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{dz} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{-4}{(3x)^3} \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( \frac{x^3}{3} - \frac{3}{x^3} \right) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{\left( \frac{1}{2x^3} - \frac{1}{x^4} \right) \, dx} }\)</li><br>
+        <!-- <li>\(\displaystyle{ \int{\frac{4}{e^{-s}} \, ds} }\)</li><br>
+        <li>\(\displaystyle{ \int{\frac{1}{12} \left( \frac{1}{3}e^x \right) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{(3y^3 - 2y^2 + \frac{e^y}{6}) \, dy} }\)</li><br>
+        <li>\(\displaystyle{ \int{(u^e + e^u) \, du} }\)</li><br> -->
+        <li>\(\displaystyle{ \int{(2\sqrt{x} - 3\sqrt[4]{x}) \, dx} }\)</li><br>
+        <li>\(\displaystyle{ \int{0 \, dt} }\)</li><br>
+    </ol>
+</div>
+
+  
+     <!-- Donde aparecerá la fecha de la última modificación -->
+    <footer>
+      
+      <center>
+        <p id="ultima-actualizacion"></p>
+      </center>
+    </footer>
+    <script>
+    // Obtenemos la fecha y hora de la última modificación del documento
+    const fechaModificacion = new Date(document.lastModified);
+    
+    // Opciones para formatear la fecha (por ejemplo, DD/MM/AAAA)
+    const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
+    const fechaFormateada = fechaModificacion.toLocaleDateString('es-ES', opcionesFecha);
+
+    // Obtenemos la hora (HH:MM:SS)
+    const horaFormateada = fechaModificacion.toLocaleTimeString('es-ES', {
+        hour: '2-digit', minute: '2-digit'
+    });
+
+    // Insertamos la fecha y la hora en el elemento con el ID "ultima-modificacion"
+    document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
+</script>
+    
+
+</body>

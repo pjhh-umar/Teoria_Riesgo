@@ -1,0 +1,109 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="./main.js"></script>
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" , href="./style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+            <div class="title">Cálculo UNO</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaria</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+    <title> § Notas  </title>
+  </head>
+
+  <body class="fondo-body" ><h1 class="page-title"> Notas</h1>  
+
+    <div class="links-box"  style = "font-family: 'Oldenburg', cursive; font-size: 200%;">
+    <!-- <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana1.html" target="_blank">Semana 1</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana2.html" target="_blank">Semana 2</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana3.html" target="_blank">Semana 3</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana4.html" target="_blank">Semana 4</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana5.html" target="_blank">Semana 5</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana6.html" target="_blank">Semana 6</a>
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana7y8.html" target="_blank">Semana 7 y 8</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana9.html" target="_blank">Semana 9</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana10.html" target="_blank">Semana 10</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana11.html" target="_blank">Semana 11</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana12.html" target="_blank">Semana 12</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana13.html" target="_blank">Semana 13</a> 
+    <a href="https://pjhh-umar.github.io/CalculoUNO/Semanas/Semana14.html" target="_blank">Semana 14</a>  -->
+
+
+</div>
+
+
+  </body>

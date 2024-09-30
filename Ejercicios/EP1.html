@@ -1,0 +1,699 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1],
+            id: "\\operatorname{id}",
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
+      } */
+      body.fondo-body{
+        counter-reset: temaCounter 1 sectionCounter;
+      }
+
+      /* h1.page-number-title
+      {
+      counter-reset: sectionCounter 0;
+      }  */
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 0;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+    </style>
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo UNO</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaria</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Primer examen parcial </title>
+      </head>  
+
+
+
+      <body class="fondo-body" ><h1 class="page-title-practica"> Prácticas Primer Examen Parcial </h1>   
+
+    <!-- <div class="nota-box"><h1 class="title"> Archivos</h1> 
+      <div class="links-box" style = "font-family: 'Oldenburg', cursive; font-size: 150%;">
+        <a href="../Archivos/EP1-GrupoA.xlsx" download> EP1-GrupoA.xlsx</a><br>
+        <a href="../Archivos/EP1-GrupoC.xlsx" download> EP1-GrupoC.xlsx</a>
+      </div>
+      </div> -->
+    
+        
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Para cada una de los siguientes ejercicios. Determine si las siguientes funciones $f$ y $g$ son iguales</p>
+        <p>
+          <ol>
+            <li>
+              <ul class="two-column">
+                <li>$f(x)= \sqrt{x}$</li>
+                <li>$g(x)=x$</li>
+              </ul>
+            </li><br>
+            <li>
+              <ul class="two-column">
+                <li>$f(x)= \left(\sqrt{x+1} \right)^{2}$</li>
+                <li> $g(x) = x+1$</li>
+              </ul>
+            </li><br>
+            <li>
+              <ul class="two-column">
+                <li>$f(x)= \begin{cases} 1, & \text{ si } x\geq 0\\  -1, & \text{ si } x< 0  \end{cases}$</li>
+                <li>$g(x) = \displaystyle{\frac{|x|}{x}}$</li>
+
+              </ul>
+            </li>
+            <!-- <li>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+            </li><br> -->
+          </ol></p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p> Determine el dominio de cada una de las siguientes funciones</p>
+        <ol class="two-column">
+          <li>$f(x)= \displaystyle{\frac{8}{x}}$</li><br>
+          <li>$f(x) = \sqrt{x - 1}$</li><br>
+          <li>$f(x)= \displaystyle{\frac{4}{4x^{2} + 4x}}$</li><br> 
+          <li>$f(x)= \displaystyle{\frac{9x - 9}{2x+7}}$</li><br>
+          <li>$f(x) = \sqrt{4x +  3}$</li><br>
+          <li>$f(x)= \displaystyle{\frac{2}{x^{2}+10}}$</li><br>
+          <li>\( f(x) = -10 \)</li><br>
+          <!-- <li>\( f(x) = 25 \)</li><br> -->
+          <li>\( f(x) = 5x - 10 \)</li><br>
+          <li>\( f(x) = -x + 3 \)</li><br>
+          <li>\( f(x) = mx + b \)</li><br>
+          <li>\( f(x) = -ax \)</li><br>
+          <li>\( f(x) = 25 - x^2 \)</li><br>
+          <li>\( f(x) = x^2 - 4 \)</li><br>
+          <li>\( f(x) = \sqrt{x} + 4 \)</li><br>
+          <li>\( f(x) = \sqrt{-2x + 25} \)</li><br>
+          <li>\( f(t) = \sqrt{-t - 8} \)</li><br>
+          <!-- <li>\( f(t) = \sqrt{9 - t^2} \)</li><br> -->
+          <li>\( f(r) = \sqrt{r^2 + 9} \)</li><br>
+          <!-- <li>\( f(r) = \sqrt{25 - r^2} \)</li><br> -->
+          <li>\( f(x) = \displaystyle{\frac{10}{4 - x}} \)</li><br>
+          <li>\( f(x) = \displaystyle{\frac{x - 4}{x^2 - 6x - 16}} \)</li><br>
+          <li>\( f(u) = \displaystyle{\frac{3u - 5}{-u^2 + 2u + 5}} \)</li>
+          <!-- <li>\( f(t) = \displaystyle{\frac{\sqrt{-t - 10}}{-3t^3 + 5t^2 + 10t}} \)</li><br> -->
+          <!-- <li>\( f(x) = \displaystyle{\frac{\sqrt{2.5x - 20}}{x^3 + 2x^2 - 15x}} \)</li><br> -->
+          <!-- <li>\( h(v) = \displaystyle{\frac{\sqrt{10 - v/3}}{v^5 - 81v}} \)</li><br> -->
+          <!-- <li>\( g(h) = \displaystyle{\frac{\sqrt{h^2 - 4}}{h^3 + h^2 - 6h}} \)</li><br> -->
+          <!-- <li>\( f(x) = \sqrt{x^2 - x - 6} \)</li><br> -->
+          <!-- <li>\( f(x) = \sqrt{x^2 + 8x + 15} \)</li><br> -->
+          <!-- <li>\( h(r) = \sqrt{r^2 - 16} \)</li><br>          -->
+        </ol>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Para cada una de las siguientes funciones. Encuentre 
+          <ul class="two-column">
+            <li>$f(x+h)$</li>
+            <li>$\displaystyle{\frac{f(x+h) - f(x)}{h}}$</li>
+          </ul>
+        </p>
+        <p>
+          <ol class="two-column">
+            <li>$f(x) = 4x -5$</li><br>
+            <li>$f(x) = x^{2} +2x$</li><br>
+            <li>$f(x) = \displaystyle{\frac{x}{2}}$</li><br>
+            <li>$f(x) = 3x^{2} - 2x -1$</li><br>
+            <li>$f(x) = \displaystyle{\frac{1}{x}}$</li><br>
+            <li>$f(x) = \displaystyle{\frac{x+8}{x}}$</li>
+<!--             
+            <li>$$</li><br> -->
+          </ol>
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Determine si la función dada es una función polinomial.</p>
+        <p>
+          <ol class="two-column">
+            <li>$ f(x) = \displaystyle{\frac{x^{3} + 7x -3}{3}}$</li><br>
+            <li>$f(x) = 3^{-2} x^{2}$</li><br>
+            <li>$(x+3)(x-1)^{2}$</li><br>
+            <li>$f(x) = 2^{x}$</li><br>
+            <li>$f(x) = \sqrt{1-x^{2}}$</li><br>
+            <li>$f(x) = 3- (x-1)^{2}$</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Determine si la función dada es una función racional.</p>
+        <p>
+          <ol class="two-column">
+            <li>$ f(x) = \displaystyle{\frac{x^{2} + x }{x^{3} +4}}$</li><br>
+            <li>$ f(x) = \displaystyle{\frac{3 }{2x + 1}}$</li><br>
+            <li>$f(x) = 4 x^{-4}$</li><br>
+            <li>$f(x)= \begin{cases} 1, & \text{ si } x < 5\\  4, & \text{ si } x \geq 5  \end{cases}$</li><br>
+            <li>$f(x) = \displaystyle{\frac{-x^{2} + 0.005 x + 1}{x}}$</li><br>
+            <li>$f(x) = \displaystyle{\frac{x}{\sqrt{x^{2} + 1}}}$</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Si $f(x) = x+3$ y $g(x) = x+5$. Encuentre las siguientes funciones:
+        </p>
+        <p>
+          <ol class="three-column"> 
+            <li> $(f + g)(x)$ </li><br>
+            <li> $(f + g)(0)$ </li><br>
+            <li> $(f - g)(x)$ </li><br>
+            <li> $(fg)(x)$ </li><br>
+            <li> $(fg)(-2)$ </li><br>
+            <li>$\displaystyle{\left(\frac{f}{g}\right)(x) }$</li><br>
+            <li>$\displaystyle{\left(\frac{f}{g}\right)(0) }$</li><br>
+            <li>$(f \circ g)(x)$</li><br>
+            <li>$(f \circ g)(3)$</li><br>
+            <li>$(g \circ f)(x)$</li><br>
+            <li>$(g \circ f)(3)$</li><br>
+            <!-- <li></li><br>
+            <li></li><br> -->
+          </ol>
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Si $f(x) = 2x$ y $g(x) = 6 + x$. encuentre las siguientes funciones:
+        </p>
+        <p>
+          <ol class="three-column"> 
+            <li> $(f + g)(x)$ </li><br>
+            <li> $(f + g)(1)$ </li><br>
+            <li> $(f - g)(x)$ </li><br>
+            <li> $(f - g)(4)$ </li><br>
+            <li> $(fg)(x)$ </li><br>
+            <li>$\displaystyle{\left(\frac{f}{g}\right)(x) }$</li><br>
+            <li>$\displaystyle{\left(\frac{f}{g}\right)(2) }$</li><br>
+            <li>$(f \circ g)(x)$</li><br>
+            <li>$(f \circ g)(0)$</li><br>
+            <li>$(g \circ f)(x)$</li><br>
+            <li>$(g \circ f)(2)$</li><br>
+            <!-- <li></li><br>
+            <li></li><br> -->
+          </ol>
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Para cada una de las siguientes funciones determine: 
+          <ul class="three-column">
+            <li>$f(0)$</li>
+            <li>$f(-2)$</li>
+            <li>$f(a+b)$</li>
+          </ul>
+        </p>
+        <p>
+          <ol class="two-column">
+            <li>\( f(x) = 5x - 10 \)</li><br>
+            <li>\( f(x) = 3x + 5 \)</li><br>
+            <li>\( f(x) = -x + 4 \)</li><br>
+            <li>\( f(x) = -\displaystyle{\frac{x}{2}} \)</li><br>
+            <li>\( f(x) = mx + b \)</li><br>
+            <li>\( f(x) = mx \)</li><br>
+            <li>\( f(x) = x^2 - 9 \)</li><br>
+            <li>\( f(x) = -x^2 + 2x \)</li><br>
+            <li>\( f(t) = t^2 + t - 5 \)</li><br>
+            <li>\( f(r) = tr^2 - ur + v \)</li><br>
+            <li>\( f(u) = u^3 - 10 \)</li><br>
+            <li>\( f(u) = -2u^3 + 5u \)</li><br>
+            <li>\( f(n) = n^4 \)</li><br>
+            <li>\( f(t) = 100 \)</li><br>
+            <li>\( f(x) = x^3 - 2x + 4 \)</li><br>
+            <li>\( f(x) = 25 - \displaystyle{\frac{x^2}{2}} \)</li><br>
+        </ol>
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>En los ejercicios siguientes, clasifique (si es posible) cada función por tipo (constante, lineal, cuadrática, polinomial, racional).</p>
+        <p>
+          <ol class="two-column">
+            <li>\( f(x) = 2^x \)</li><br>
+            <li>\( f(x) = -24 \)</li><br>
+            <li>\( f(x) = \displaystyle{\frac{(x - 5)}{2}} \)</li><br>
+            <li>\( f(x) = x^2 - 25 \)</li><br>
+            <li>\( f(x) = 2x^0 \)</li><br>
+            <li>\( f(x) = x^5 + 2x^3 - 100 \)</li><br>
+            <li>\( f(x) = 10 - x/4 \)</li><br>
+            <li>\( f(x) = 10/x \)</li><br>
+            <li>\( f(x) = \log_{10} x \)</li><br>
+            <li>\( f(x) = \displaystyle{\frac{x^4 - 5x^2}{x^6 + 5}} \)</li><br>
+            <li>\( g(h) = -\displaystyle{\frac{25}{h^5}} \)</li><br>
+            <li>\( h(s) = 3 - 4s + s^2 - s^{3/4} \)</li><br>
+            <li>\( v(t) = x^2 \sqrt[3]{x} \)</li><br>
+            <li>\( f(u) = (5u - 3)^4 \)</li><br>
+            <li>\( f(n) = \displaystyle{\frac{50}{(4)^3}} \)</li><br>
+            <li>\( g(h) = \sqrt{\displaystyle{\frac{100}{(5)^2}}} \)</li><br>
+            <li>\( f(x) = 10^x \)</li><br>
+            <li>\( f(x) = x^{16} \sqrt[3]{x} \)</li><br>
+            <li>\( f(t) = \displaystyle{\frac{t^5}{36 - t^8}} \)</li><br>
+            <li>\( f(x) = 3^{2x} \)</li><br>
+            <li>\( f(x) = \log_{10} (x + 5) \)</li><br>
+            <li>\( v(h) = \log_{e} h \)</li><br>
+            <li>\( f(x) = [(x + 4)^5]^0 \)</li><br>
+            <li>\( f(x) = [(x - 9)^0]^3 \)</li><br>
+        </ol>
+
+        </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        La función \( C(x) = 15x + 8,000 \) expresa el costo total \( C(x) \) (en dólares) de fabricar \( x \) unidades de un producto. Si el número máximo de unidades que se pueden producir es 50,000, determine el dominio restringido y el rango para esta función del costo.
+      </div>
+      
+      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <b>Función de la demanda</b>. La función \( q = f(p) = 280\,000 - 35p \) es una función de la demanda que expresa la cantidad demandada de un producto \( q \) como una función del precio cobrado del producto \( p \), expresado en dólares. Determine el dominio restringido y el rango de esta función.
+      </div>
+      
+      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <b>Función de la demanda</b>. La función \( q = f(p) = 180,000 - 30p \) es una función de la demanda que
+        expresa la cantidad demandada de un producto \( q \) como una función del precio cobrado del 
+        producto \( p \), indicado en dólares. Determine el dominio restringido y el rango de esta función.
+      </div>
+      
+      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <b>Primas de seguros.</b> Una compañía de seguros tiene un método simplificado para determinar la prima 
+        anual para una póliza de seguro de vida. Se cobra una cuota anual sencilla de $\$150$ anuales para 
+        todas las pólizas más $\$2$.50 por cada mil dólares de la cantidad de la póliza. 
+        Por ejemplo, una póliza de $\$200,000$ costaría $\$150$ por la cuota fija más $\$50$, que corresponden
+        al valor nominal de la póliza. Si \( p \) es igual a la prima anual en dólares y \( x \) equivale al
+        valor de la póliza (expresado en miles de dólares), determine la función que se puede utilizar para
+        calcular las primas anuales.
+      </div>
+      
+      <!-- <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        En el ejercicio anterior, suponga que la póliza mínima que se emitirá es de $\$10,000$ y la máxima
+        cantidad asegurada será $\$500,000$. Determine el dominio restringido y el rango de la ecuación
+        encontrada en el ejercicio anterior.
+      </div> -->
+      
+      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        Una compañía eléctrica local usa el método siguiente para calcular las cuentas eléctricas mensuales
+        para un tipo de clientes. Se evalúa un cargo de servicio mensual de $\$$5 por cada cliente. Además, 
+        la compañía cobra $\$0.095$ por kilowatt hora. Si \( c \) es igual a la cuota mensual expresada en
+        dólares y \( k \) es el número de kilowatts hora usados durante un mes:
+        <ul>
+          <li>Determine la función que expresa el cargo mensual de un cliente como una función del número 
+            de kilowatts hora.</li><br> 
+          <li>Use esta función para calcular la cuota mensual para un cliente que usa 850 kilowatts hora.</li>
+        </ul>
+      </div>
+      
+      <!-- <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+        Refiérase al ejercicio anterior y suponga que el método de cálculo de cuentas de electricidad
+        se aplica para clientes que usan entre 200 y 1500 kilowatts hora por mes. Determine el
+        dominio restringido y el rango de la función de ese ejercicio.
+      </div> -->
+      
+      <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <b>Arrendamiento de automóviles.</b> Una agencia de arrendamiento de automóviles renta autos con una tasa de $15 por día más $0.08 por milla conducida. Si \( y \) es igual al costo de la renta de un auto en dólares por un día y \( x \) equivale al número de millas conducidas en un día:
+        <ul>
+          <li>a) Determine la función \( y = f(x) \) que expresa el costo diario de la renta de
+             un automóvil.</li>
+          <li>b) ¿Cuál es \( f(300) \)? ¿Qué representa \( f(300) \)?</li>
+          <li>c) Comente sobre el dominio restringido de la función.</li>
+        </ul>
+      </div>
+      
+      <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        En la fabricación de un producto, una empresa incurre en dos tipos de costos. Se incurre en costos
+        anuales fijos de $\$250,000$ sin importar el número de unidades producidas. Además, para la empresa 
+        cada unidad producida tiene un costo de $\$6$. Si \( C \) es igual al costo total anual en dólares 
+        y \( x \) es igual al número de unidades producidas en un año:
+        <ul>
+          <li>Determine la función \( C = f(x) \) que expresa el costo anual.</li><br>
+          <li>¿Cuál es \( f(200,000) \)? ¿Qué representa \( f(200,000) \)?</li><br>
+          <li>Indique el dominio restringido y el rango restringido de la función si la capacidad 
+            máxima de producción es de 300,000 unidades por año.</li>
+        </ul>
+      </div>
+      
+      <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <b>Plan de incentivo salarial</b>. Un productor de un producto perecedero ofrece un incentivo salarial a los conductores de sus camiones. Una entrega estándar toma un promedio de 20 horas. Se paga
+      </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p><b>Utilidad</b>. Cierto expendio de café vende una libra de café por $\$9.75$. 
+        Los gastos mensuales son $\$4500$ más $\$4.25$ por cada libra vendida.</p>
+      <ol>
+          <li>Escriba una función \( r(x) \) para el ingreso mensual total como una función del 
+            número de libras vendidas.</li><br>
+          <li>Escriba una función \( e(x) \) para los gastos mensuales totales como una función 
+            del número de libras de café vendidas.</li><br>
+          <li>Escriba una función para la utilidad mensual total como una función del número de libras vendidas.</li><br>
+      </ol>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <b>Viaje en tren</b>. Un boleto de viaje redondo en tren a la ciudad cuesta $\$4.50$. Escriba su costo
+      como función del ingreso del pasajero. ¿Qué tipo de función es?
+    </div>
+    
+    <!-- <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      Geometría. Un prisma rectangular tiene una longitud tres veces mayor que su ancho, y altura una unidad menor que el doble del ancho. Escriba el volumen del prisma rectangular como una función del ancho. ¿Qué clase de función es?
+    </div> -->
+    
+    <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <b>Función de costo</b>. En la fabricación de un componente para una máquina, el costo inicial de un dado
+       es de $\$850$, y todos los otros costos adicionales son de $\$3$ por unidad producida.
+       <ul>
+        <li>Exprese el costo total \( C \) (en dólares) como una función lineal del número \( q \) de unidades producidas.</li><br>
+        <li>¿Cuántas unidades se producen si el costo total es de $1600?</li>
+       </ul>
+    </div>
+    
+    <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <b>Inversión.</b> Se invierte un capital de \( P \) dólares a una tasa de interés simple anual \( r \) 
+      durante \( t \) años, exprese la cantidad total acumulada del capital y del interés como una función de 
+      \( t \). ¿Su resultado es una función lineal de \( t \)?
+    </div>
+    
+    <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <b>Ventas.</b> Para estimular las ventas a grupos grandes, un teatro cobra dos precios. Si su grupo es
+      menor de 12, cada boleto cuesta $\$9.50$. Si su grupo es de 12 o más, cada boleto cuesta $\$8.75$. 
+      Escriba una función definida por partes para representar el costo de comprar \( n \) boletos.
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>Utilice la gráfica de la función para determinar los límites indicados:</p>
+     
+      <ol class="three-column">
+        <li> \(\displaystyle{\lim_{{x \to -5^-}}} f(x)\)</li><br>
+        <li> \(\displaystyle{\lim_{{x \to -5^+}}} f(x)\)</li><br>
+        <li> \(\displaystyle{\lim_{{x \to -5}}} f(x)\)</li><br>
+        <li> \(\displaystyle{\lim_{{x \to 0^-}}} f(x)\)</li><br>
+        <li> \(\displaystyle{\lim_{{x \to 0^+}}} f(x)\)</li><br>
+        <li> \(\displaystyle{\lim_{{x \to 0}}} f(x)\)</li><br>
+      </ol>
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/grafica1.png" alt="", width="60%" height="auto">
+        </div>
+      </p>
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>Utilice la gráfica de la función para determinar los límites indicados:</p>
+      <ol class="three-column">
+        <li>\(\displaystyle{\lim_{{x \to 0^-}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 0^+}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 0}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 3^-}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 3^+}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 3}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to -5}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 1}}} f(x)\)</li><br>
+        <li>\(\displaystyle{\lim_{{x \to 4}}} f(x)\)</li><br>
+      </ol>
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/grafica2.png" alt="", width="60%" height="auto">
+        </div>
+      </p>
+    </div>
+    
+    
+
+    <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>Encuentre el límite solicitado en en cada uno de los siguientes ejercicios. </p>
+      <ol class="two-column">
+        <li> $\displaystyle{\lim_{{x \to 2}}} 16$</li><br>
+        <li> $\displaystyle{\lim_{{t \to 5}}} (t^2 - 5)$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 2}}} (3x^3 - 4x^2 + 2x - 3)$</li><br>
+        <li> $\displaystyle{\lim_{{t \to 3}}} \frac{{t - 2}}{{t + 5}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 3}}} 2x$</li><br>
+        <li> $\displaystyle{\lim_{{t \to \frac{1}{3}}}} (5t - 7)$</li><br>
+        <li> $\displaystyle{\lim_{{r \to 9}}} \frac{{4r - 3}}{{11}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to -6}}} \frac{{x^2 + 6}}{{x - 6}}$</li><br>
+        <li> $\displaystyle{\lim_{{h \to 0}}} \frac{h}{{h^2 - 7h + 1}}$</li><br>
+        <li> $\displaystyle{\lim_{{z \to 0}}} \frac{{z^2 - 5z - 4}}{{z^2 + 1}}$</li><br>
+        <li> $\displaystyle{\lim_{{y \to 15}}} \sqrt{y + 3}$</li><br>
+        <li> $\displaystyle{\lim_{{p \to 4}}} \sqrt{p^2 + p + 5}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 2}}} \frac{{x^2 + 2x}}{{x + 2}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 2}}} \frac{{x^2 - x - 2}}{{x - 2}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 3}}} \frac{{x^2 - x - 6}}{{x - 3}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 3}}} \frac{{x - 3}}{{x^2 - 9}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 4}}} \frac{{x^2 - 9x + 20}}{{x^2 - 3x - 4}}$</li><br>
+        <li> $\displaystyle{\lim_{{t \to 0}}} \frac{{t^3 + 3t^2}}{{t^3 - 4t^2}}$</li><br>
+        <li> $\displaystyle{\lim_{{t \to 2}}} \frac{{t^2 - 4}}{{t - 2}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 0}}} \frac{{x^2 - 2x}}{{x}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 0}}} \sqrt{13^2 - 12^2} + (6 - 4)^2 \times 8 - \sqrt{(10 - 8)^2}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 2}}} \frac{{3x^2 - x - 10}}{{x^2 + 5x - 14}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to -4}}} \frac{{x^2 + 2x - 8}}{{x^2 + 5x + 4}}$</li><br>
+        <li> $\displaystyle{\lim_{{x \to 0}}} \frac{{(x + 2)^2 - 4}}{{x}}$</li><br>
+        <!-- <li>\(\displaystyle \lim_{{x \to -1}} g(x)\) donde \(g(x) = \begin{cases} 
+          5 - 2x & \text{para } x < -1 \\
+          2x & \text{para } x \geq -1 
+        \end{cases}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 0}} h(x)\) donde \(h(x) = \begin{cases} 
+          x^2 & \text{para } x < 0 \\
+          0.5x^2 & \text{para } x \geq 0 
+        \end{cases}\)</li><br> -->
+        <li>\(\displaystyle \lim_{{x \to -3}} (-2x^3)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 4}} (4x^2 - 5x + 1)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 2}} (-x^3)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -2}} (2x^3 - 16)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 8}} \frac{x^2 - 64}{x - 8}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{9 - x^2}{3 - x}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -1}} \frac{3x^2 - 9x - 12}{3x + 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -\frac{1}{2}}} \frac{1 - x - 2x^2}{1 - 2x}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 0}} \frac{4}{x}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{4}{x - 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 0}} \frac{8}{x + 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 2}} \frac{5}{4 - 2x}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{x - 7}{x + 2}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 7}} \frac{x^2 - 49}{x + 7}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{x^2 + 3x - 18}{x - 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -5}} \frac{x^2 + 3x - 10}{x + 5}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{2x^2 + 7x - 15}{x - 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{x^2 + 3x}{x + 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 0}} (3x^2 - 5x + 3)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 2}} (2x^3 - 10x)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 2}} \left(\frac{x^3}{3} - 7x^2\right)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 3}} \frac{2x - 8}{x + 4}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 2}} \frac{2x^2 + 3}{x^3 + 4x - 2}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -4}} 250\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 0}} 175\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -10}} \frac{x^2 + 25}{x}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -1}} (3x^3 + 2x^2 + x)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -2}} (-x^4 + 8x^2)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -2}} (-x^3 + 5x^2 + 10)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 2}} (5x^3 + 10x^2)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 5}} \frac{4x - 20}{3x^2 - 7x + 5}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -2}} \frac{10 + x^2}{5 - 8x + 2x^2}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -3}} (6x^3 + 2x)(5x - 10)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 5}} \left[\frac{x + 3}{x + 6} (x^2 - 12)\right]\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -4}} \frac{x^2 + 8x - 14}{2x + 7}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to 1}} \frac{x^2 + 3x - 24}{x - 3}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -4}} \frac{x^2 - 16}{x + 4}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -9}} \frac{81 - x^2}{9 + x}\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to -5}} (4x^3 - 5x^2 + 10)\)</li><br>
+        <li>\(\displaystyle \lim_{{x \to c}} (x^2 - 2x + 3)\)</li><br>
+    </ol>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Encuentre \(\displaystyle{\lim_{{h \to 0}}} \frac{{(x + h)^2 - x^2}}{h}\). Trate a \(x\) como una constante.</p>
+    </ol>
+ 
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Encuentre \(\displaystyle{\lim_{{h \to 0}}} \frac{{3(x + h) + 7(x + h) - 3x^2 - 7x}}{h}\). Trate a \(x\) como una constante.</p>
+  
+ 
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>Para cada uno de los siguientes ejercicios encuentre \(\displaystyle{\lim_{{h \to 0}}} \frac{{f(x + h) - f(x)}}{h}\).</p>
+    <ol class="two-column">
+      <li>\(f(x) = 7 - 3x\)</li><br>
+      <li>\(f(x) = 2x + 3\)</li><br>
+      <li>\(f(x) = x^2 - 3\)</li><br>
+      <li>\(f(x) = x^2 + x + 1\)</li><br>
+      <li>\(f(x) = x^3 - 4x^2\)</li><br>
+      <li>\(f(x) = 3 - x + 4x^2\)</li><br>
+    </ol>
+ 
+  </div>
+
+
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>En los siguientes ejercicios utiliza la definición de continuidad para mostrar que la función dada
+       es continua en el punto indicado.</p>
+    <ol class="two-column">
+      <li>\(\displaystyle f(x) = x^3 - 5x, x = 2\)</li><br>
+      <li>\(\displaystyle f(x) = \frac{x-3}{5x}, x = -3\)</li><br>
+      <li>\(\displaystyle g(x) = \sqrt[3]{x+4}, x = 2\)</li><br>
+      <li>\(\displaystyle h(x) = \frac{x-4}{x+4}, x = 4\)</li><br>
+      <li>\(\displaystyle f(x) = \sqrt[3]{x-1}, x = 1\)</li><br>
+      <li>\(\displaystyle f(x) = \frac{1}{x}, x = 0\)</li><br>
+      <li>\(\displaystyle f(x) = \frac{x+4}{x-2}, 0\)</li><br>
+      <li>\(\displaystyle f(x) = \frac{x^2 - 4x + 4}{x-2}, -2\)</li><br>
+  </div>
+  
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>En los siguientes ejercicios utiliza la definición de continuidad para mostrar que la función dada
+       es continua en los puntos indicados.</p>
+       <ol class="two-column">
+        <li>\(\displaystyle h(x) = \frac{x+4}{x - 2}, -2, 0\)</li><br>
+        <li>\(\displaystyle h(x) = \frac{x-3}{x^2 - 9}, 3, -3\)</li><br>
+        <li>\(\displaystyle h(x) = \frac{x^{2} - 4 x +4 }{6}, -2, 2\)</li><br>
+        <li>\(\displaystyle h(x) = \frac{3}{x^{2} + 4}, -2, 2\)</li><br>
+        <li>$f(x)= \begin{cases} x+2, & \text{ si } x\geq 2\\  x^{2}, & \text{ si } x< 2  \end{cases}, \,2,0$</li><br>
+        <li>$f(x)= \begin{cases} \displaystyle{\frac{1}{x}}, & \text{ si } x\neq  0\\  0, & \text{ si } x=0  \end{cases}, \,0,-1$</li>
+      </ol>
+  </div>
+
+  <div class="nota-box">
+    <h1 class="number-title-practica"> Ejercicio</h1>
+    <p>Encuentre todos los puntos de discontinuidad en los problemas.</p>
+    <ol class="two-column">
+        <li>\(\displaystyle f(x) = 3x^2 - 3\)</li><br>
+        <li>\(\displaystyle h(x) = x - 2\)</li><br>
+        <li>\(\displaystyle f(x) = \frac{x^2 + 3x - 4}{x^2 - 4}\)</li><br>
+        <li>\(\displaystyle g(x) = \frac{(2x^2 - 3)^3}{15}\)</li><br>
+        <li>\(\displaystyle f(x) = \frac{x^2 + 6x + 9}{x^2 + 2x - 15}\)</li><br>
+        <li>\(\displaystyle g(x) = \frac{x - 3}{x^2 + x}\)</li><br>
+        <li>\(\displaystyle h(x) = \frac{x - 7}{x^3 - x}\)</li><br>
+        <li>\(\displaystyle f(x) = \frac{2x - 3}{3 - 2x}\)</li><br>
+        <li>\(\displaystyle p(x) = \frac{x}{x^2 + 1}\)</li><br>
+        <li>\(\displaystyle f(x) = \frac{x^4}{x^4 - 1}\)</li><br>
+        <li>\(\displaystyle f(x) = \frac{2 + 3x - x^2}{x-1}\)</li><br>
+        <li>\(\displaystyle f(x) = \left\{ \begin{array}{ll} 1 & \text{si } x \geq 0 \\ -1 & \text{si } x < 0 \end{array} \right.\)</li><br>
+        <li>\(\displaystyle f(x) = \left\{ \begin{array}{ll} 2x + 1 & \text{si } x \geq -1 \\ 1 & \text{si } x < -1 \end{array} \right.\)</li><br>
+        <li>\(\displaystyle f(x) = \left\{ \begin{array}{ll} 0 & \text{si } x \leq 1 \\ x - 1 & \text{si } x > 1 \end{array} \right.\)</li><br>
+        <li>\(\displaystyle f(x) = \left\{ \begin{array}{ll} x - 3 & \text{si } x > 2 \\ 3 - 2x & \text{si } x < 2 \end{array} \right.\)</li><br>
+        <li>\(\displaystyle f(x) = \left\{ \begin{array}{ll} x^2 + 1 & \text{si } x > 2 \\ 8x & \text{si } x < 2 \end{array} \right.\)</li><br>
+        <li>\(\displaystyle f(x) =  \begin{cases} \displaystyle{\frac{16}{x^2}} & \text{si } x \geq 2 \\ 3x - 2 & \text{si } x < 2 \end{cases} \)</li>
+    </ol>
+   </div>
+    <!-- <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <b>Factoriales.</b> El grupo que cursa matemáticas financieras ha elegido a un comité integrado por 
+      cuatro personas, para quejarse con el magisterio por la inclusión de la notación factorial en el curso. 
+      Decidieron que, para ser más eficaces, los miembros se harían nombrar A, G, M y S, y que el miembro A
+    </div> -->
+
+    <!-- <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p></p>
+
+      <p><b>Sugerencia:</b> </p>
+    </div>
+
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p></p>
+
+      <p><b>Sugerencia:</b> </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p></p>
+
+      <p><b>Sugerencia:</b> </p>
+    </div> -->
+
+</body>

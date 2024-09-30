@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="./main.js"></script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="./style.css" />
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
+
+  
+    <!-- Top Menu  -->
+    
+      
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo UNO</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaria</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+
+      
+        </header> 
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Fundamentos Matemáticos</title>
+      </head>  
+          
+      <body class="fondo-body" >
+          
+        <div class="info-profesor-box">
+            <!-- <div class="informacion_profesor">  -->
+              <div class="title_nombre">Profesor: Pablo Jorge Hernández Hernández</div>
+              <div class="subtitle_nombre">Instituto de Investigación de Matemáticas y Actuaría (IIMA)</div>
+              <div class="subtitle_nombre">Cubículo #5</div>            
+            <!-- </div> -->
+        </div>
+
+
+      <div class="info-box" style = "font-family: 'Oldenburg', cursive;">
+        <center><h1 class="title">Temario</h1></center>
+
+      <ol class="lista" >
+        <li>Límite de funciones</li>
+          <ol class="sublista"> 
+            <li>Concepto de función</li>
+            <li>Dominio, rango y gráfica de una función</li>
+            <li>Concepto de Límite de una función</li>
+            <li>Teoremas sobre límites de funciones</li>
+            <li>Límites de funciones</li>
+          </ol>
+        <li>Derivada de una función</li>
+          <ol class="sublista">
+            <li>Concepto teórico y geométrico de la derivada de una función</li>
+            <li>Fórmulas de derivación</li>
+            <li>Derivada de funciones</li>
+            <li>Aplicaciones diversas</li>
+          </ol>
+        <li>Integral de una función</li>
+          <ol class="sublista">
+            <li>Concepto teórico y geométrico de la integral de una función</li>
+            <li>Las sumas de Riemman</li>
+            <li>La Integral definida y Teorema Fundamental del Cálculo</li>
+            <li>Fórmulas de integración</li>
+            <li>Integral de funciones</li>
+            <li>Aplicaciones diversas</li>
+          </ol>
+          <li>Álgebra Lineal</li>
+          <ol class="sublista">
+            <li>Definición de matriz, notación</li>
+            <li>Operaciones con matrices</li>
+            <li>Clasificación de las matrices</li>
+            <li>Operaciones elementales de fila</li>
+            <li>Cálculo de la inversa de una matriz</li>
+            <li>$m$ ecuaciones lineales con $n$ incógnitas: eliminación de Gauss-Jordan y gaussiana</li>
+          </ol>
+          <li>Introducción a la optimización</li>
+          <ol class="sublista">
+            <li>Origen de la Investigación de Operaciones</li>
+            <li>Metodología de la Investigación de Operaciones (Formulación, Modelización, Implementación)</li>
+            <li>Maximización de utilidades y minimización de costos</li>
+
+          </ol>
+              
+
+
+          </ol>
+
+        
+      </ol>
+          
+<!-- 
+          <ol class="lista">
+            <li>Elemento 1</li>
+            <ol class="sublista">
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 2</li>
+            <ol class="sublista">
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 3</li>
+          </ol> -->
+        
+      
+      </div>
+
+        
+      <div class="info-box"  style = "font-family: 'Oldenburg', cursive;">
+        <center><h1 class="title">Bibliografía</h1></center>
+      <b><font size="5">Libros básicos</font></b>
+          <ol class="lista">
+            <li>Arya, Lardner y Ibarra. (2009). Matemáticas aplicadas a la administración y la economía. 5ª ed. Prentice-Hall.</li>
+            <li>Dowling, E. (2000). Cálculo para administración, economía y ciencias sociales. 1ª ed. McGraw-Hill.</li>
+            <li>Grossman, S. I. (2008). Algebra lineal. 8ª edición. McGraw Hill.</li>
+            <li>Haeussler, Ernest y Paul. (2008). Matemáticas para administración y economía. 2ª ed. Pearson Educación.</li>
+            <li>Smith, et al. (1998). Álgebra, trigonometría y geometría analítica. Addison Wesley.</li>
+            <li>Swokowski, y Jeffery (2009). Álgebra y trigonometría con geometría analítica. 12ª ed. Cengage Learning.</li>
+          </ol>
+  
+        <b><font size="5">Libros de consulta</font></b>
+          <ol>
+            <li>Arya, Lardner, y Ibarra (2012). Cálculo aplicado a la administración y a la economía. Pearson.</li>
+            <li>Budnick, F. (2009). Matemáticas aplicadas para la administración, economía y ciencias sociales. 4ª ed. McGraw Hill.</li>
+            <li>Caballero, Martínez, y Bernárdez. (2009). Iniciación al Cálculo Diferencial e Integral. 7ª ed. Editorial Esfinge.</li>
+            <li>Stewart, Redlin, y Watson. (2016). Precálculo. Matemáticas para el cálculo. 7ª ed. Cengage Learning.</li>
+          </ol>
+  </div>
+
+
+      </body>
+  </html>

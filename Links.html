@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="./main.js"></script>
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista
+        {
+            counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+        }
+        /* .sublista{
+            counter-reset: sublistaCounter 1  SubsublistaCounter;
+        } */
+        </style>
+
+    <style>
+            /* body.number-title
+            {
+            counter-reset: temaCounter 1 subsectioncounter ;
+            } */
+            body.fondo-body{
+              counter-reset: temaCounter 0 sectionCounter;
+            }
+
+            /* h1.page-number-title
+            {
+            counter-reset: sectionCounter 0;
+            }  */
+
+            h1.tema-number-title
+                {
+                counter-reset: sectionCounter 0;
+                } 
+
+            h1.number-title
+            {
+            counter-reset: subsectionCounter;
+            /* counter-reset: subsectionCounter; */
+            }
+
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="./style.css" />
+    <!-- Top Menu  -->
+    
+       
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo UNO</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaria</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Enlaces externos</title>
+      </head>  
+
+      <body class="fondo-body" >
+  
+      <div class="nota-box" style="font-size: 12px;">
+<!--         
+        
+        <h1 class="page-number-title"> Base de datos relacional en Access </h1>
+
+          <h1 class="tema-number-title">Tablas y relaciones</h1>
+        
+        
+        <br>
+        <center>
+        <button class="respButton hvr-grow"><h1 class="number-title"> Introducción. Crear una Base de Datos en Access. </h1>
+        </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/8JP5KXY942o?si=ExuXQGOZMg1nY2d1" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+        
+        
+        <button class="respButton hvr-grow"><h1 class="number-title"> Crear tablas en Access. Parte 1</h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/m_9gxGiXKG0?si=-PNNpMTAp5vcIeuM" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        
+        <button class="respButton hvr-grow"><h1 class="number-title"> Crear tablas en Access. Parte II</h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/mVAj4apomBo?si=Lx_ww_jDWgZWCbxa" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title"> Propiedades de campo.</h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/HW_EA7gIkoQ?si=JoRUcw_0hFWQXED6" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title"> Propiedades de campo. Mascara de entrada.</h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/dFmP8pepYjk?si=5PHeLUyFYiJyYTjY" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+
+        <button class="respButton hvr-grow"><h1 class="number-title"> Asistente de busqueda en Access</h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/dwklVtftDpc?si=FNOH6YntSoYBEcys" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+        <button class="respButton hvr-grow"><h1 class="number-title"> Crear relaciones entre tablas en Access</h1></button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/aKveYscRvhI?si=dw6dj0QuyZvoKVc7" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+        <button class="respButton hvr-grow"><h1 class="number-title"> Combinaciones en una relación entre tablas en Access</h1></button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/zDMI7ttkPXM?si=EGn43i25GFzbLC3c" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+      </center>
+
+
+
+        <br>
+
+          <h1 class="tema-number-title">Formularios</h1>
+    
+
+        <br>
+        <center>
+        <button class="respButton hvr-grow"><h1 class="number-title">Ingresar datos a tablas relacionadas en Access </h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/9twrRQEhP4U?si=tpyGdJS0mu3vxexp" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title"> Crear un formulario de ingreso de datos en Access </h1> </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/FCnQGUrCe9Q?si=RUU_KqT6ZEc1iRLf" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+        
+        <button class="respButton hvr-grow"><h1 class="number-title"> Crear un Menu en  Access  </h1></button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/c6PVMKHzUgk?si=OZWXI5BLYXJrROSi" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+      
+      <button class="respButton hvr-grow"><h1 class="number-title"> Agregar botones a un formulario  en  Access  </h1></button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/8yCfqZLnqMI?si=DsRz1w6l4hLaJLbp" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+      </center>
+      
+  
+      <br>
+
+      
+        <h1 class="tema-number-title">Consultas</h1>
+        <br>
+    <center>
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una  consulta básica en  Access </h1>  </button>
+      <div class="resp-box flexbox">
+        <iframe width="95%" height="90%" class="video"
+        src="https://www.youtube.com/embed/xaDKfyHDhu0?si=u5cEVeVwOZurMCHR" allowfullscreen="true"> 
+        </iframe>
+      </div><br>
+    
+
+
+        
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una  consulta en  Access. Parte I</h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/6tkdbLTQZB4?si=Djl5FlM6j9CU7Fcp" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una  consulta multitablas en  Access. Parte II </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+          src="https://www.youtube.com/embed/TmnpJKLbw2w?si=WnIAlDSArGzs433Z" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una consulta con operadores And y Or en  Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/eZFytodY2c4?si=uHgRMPnOIyH2nS-s" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una consulta con operadores de comparación en  Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/XNFyZGYy5S0?si=Ez9NcbGTIbvclY3t" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una consulta con parámetros en  Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/JqCtah6YufA?si=Yx6ZSWHUrgfXpHCY" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una consulta entre varias tablas en  Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/ZKAzZwUsWFU?si=nz1EuE1pN7dN5QJw" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una consulta de cálculo  Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/MZvjX9gWSM0?si=s7MBgNxOynmeK_Ba" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una consulta de agrupacion y totales en Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/IX0V3JB7GBw?si=ih32kmrY4zQQXpKe" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+
+
+        
+
+        
+
+        <button class="respButton hvr-grow"><h1 class="number-title">  Crear una  consulta general en  Access. </h1>  </button>
+        <div class="resp-box flexbox">
+          <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/UmWfxACoYD0?si=ln5mETQ6XV1zMrLD" allowfullscreen="true"> 
+          </iframe>
+        </div><br>
+
+      
+
+
+        
+      </center>
+
+
+      </div>
+       -->
+    </body>
+  </html>
