@@ -314,7 +314,7 @@ width: auto;
 }
 
 .title_nombre{
-  font-size: 115%;
+  font-size: 100%;
   /* padding: .8%; */
   font-weight: 800;
   font-family: 'IM Fell English', serif;
@@ -358,7 +358,7 @@ width: auto;
 
 
 h1.title{
-  font-size: 190%;
+  font-size: 170%;
   font-weight: 600;
   margin-top: 0%;
   margin-bottom: 3.5%;
@@ -382,7 +382,7 @@ h1.title{
 }
 
 h2.title{
-  font-size: 180%;
+  font-size: 160%;
   font-weight: 600;
   /* padding: 2%; */
   /* font-family: "Muli"; */
@@ -509,7 +509,7 @@ body.card{
           }
 
 h1.page-title{
-  font-size: 160%;
+  font-size: 140%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
