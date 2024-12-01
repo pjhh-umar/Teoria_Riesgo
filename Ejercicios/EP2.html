@@ -121,57 +121,8 @@
       </div>
       </div> -->
     
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Si el riesgo $S$ en el modelo colectivo tiene distribución $\mathrm{Bin\, Comp}(n,p,G)$. Prueba que
-          <ol>
-            <li>$\mathbb{E}[S] =  np\mathbb{E}[Y]$</li><br>
-            <li>$\mathbb{E}\left[S^{2}\right] = np \left( \mathbb{E}\left[Y^{2}\right]  + (n-1) p \left(\mathbb{E}\left[Y\right]\right)^{2} \right)$</li><br>
-            <li>$\mathrm{Var}[S] = np \left( \mathbb{E}\left[Y^{2}\right]  - p \left(\mathbb{E}\left[Y\right]\right)^{2} \right)$</li><br>
-            <li>$\mathrm{M}_{S}(t) =\displaystyle{ \left(\displaystyle{ 1 -p + p\mathrm{M}_{Y}(t)} \right)^{n}}$</li>
-          </ol>
-        </p>
-      </div>
 
-      
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Si el riesgo $S$ en el modelo colectivo tiene distribución $\mathrm{Bin\, Neg\, Comp}(r,p)$. Prueba que
-          <ol>
-            <li>$\mathbb{E}[S] = r \left( \displaystyle{\frac{1}{p} -1} \right) \mathbb{E}[Y]$</li><br>
-            <li>$\mathbb{E}\left[S^{2}\right] = r \left( \displaystyle{\frac{1}{p} -1} \right) \left[ \mathbb{E}\left[Y^{2}\right] + (r+1)\displaystyle{\left(\frac{1}{p} -1\right)} \left(\mathbb{E}\left[Y\right]\right)^{2} \right]$</li><br>
-            <li>$\mathrm{Var}[S] = r \left( \displaystyle{\frac{1}{p} -1} \right) \left[ \mathbb{E}\left[Y^{2}\right] + \displaystyle{\left(\frac{1}{p} -1\right)} \left(\mathbb{E}\left[Y\right]\right)^{2} \right]$</li><br>
-            <li>$\mathrm{M}_{S}(t) =\displaystyle{ \left(\displaystyle{ \frac{p}{1 - (1-p)\mathrm{M}_{Y}(t)} }\right)^{r}}$</li>
-          </ol>
-        </p>
-      </div>
-
-
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Si el riesgo $S$ en el modelo colectivo tiene distribución $\mathrm{Poisson\, Comp}(\lambda,G)$. Prueba que
-          <ol>
-            <li>$\mathbb{E}[S] = \lambda \mathbb{E}[Y]$</li><br>
-            <li>$\mathbb{E}\left[S^{2}\right] = \lambda \mathbb{E}[Y^{2}] + \lambda^{2}\left(\mathbb{E}[Y]\right)^{2}$</li><br>
-            <li>$\mathrm{Var}[S] = \lambda \mathbb{E}\left[Y^{2} \right]$</li><br>
-            <li>$\mathrm{M}_{S}(t) = \exp\left( \lambda \left( \mathrm{M}_{Y}(t) -  1\right) \right)$</li>
-          </ol>
-        </p>
-      </div>
-
-
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Sea $S = \displaystyle{\sum_{j=1}^{N} Y_{j}}$  el riesgo en el modelo colectivo. Si $N$ tiene distribución 
-          $\mathrm{Poisson}(\Lambda)$ en donde $\Lambda$ es una variable aleatoria con función de distribución $F_{\lambda}(\lambda)$,
-          prueba que 
-          <ol>
-            <li>$\mathbb{P}(N=n) = \displaystyle{\int_{0}^{\infty} \mathrm{e}^{-\lambda} \frac{\lambda^{n}}{n!} } dF_{\Lambda}(\lambda)$</li><br>
-            <li>$\mathbb{E}\left[S\right] = \mathbb{E}[\Lambda]\mathbb{E}[Y]$</li><br>
-            <li>$\mathbb{E}\left[S^{2}\right] = \mathbb{E}\left[\Lambda\right] \mathbb{E}\left[Y^{2}\right] + \mathbb{E}\left[\Lambda^{2}\right]\left(\mathbb{E}[Y]\right)^{2}$</li><br>
-            <li>$\mathrm{Var}[S] = \mathrm{Var}[\Lambda]\mathbb{E}\left( \left[Y\right]\right)^{2}   + \mathbb{E}\left[Y\right]  \mathbb{E}\left[Y^{2}\right]$</li><br>
-            <li>$\mathrm{M}_{S}(t) = \mathrm{M}_{\Lambda}\left(  \mathrm{M}_{Y}(t) -  1 \right)$</li>
-          </ol>
-        </p>
-      </div>
-
-      <!-- <div class="nota-box">
+      <div class="nota-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Considere el modelo individual de riesgo en donde $D_j$ tiene distribución $\text{Ber}(q)$, es decir, $q_j = q > 0$ es constante. Suponga además que cada reclamación $C_j$ es constante $c > 0$, es decir, se trata de una misma suma asegurada para todos. Encuentre una expresión para la esperanza y la varianza de $S$.</p>
     </div>
@@ -185,22 +136,23 @@
         </ol>
     </div>
     
-    <div class="nota-box">
+    <!-- <div class="nota-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuestre que si $f_1(x), \dots, f_n(x)$ son funciones diferenciables que no se anulan, entonces:</p>
         <p>$\displaystyle{\frac{d}{dx} \left[ \prod_{j=1}^n f_j(x) \right] = \left[ \prod_{j=1}^n f_j(x) \right] \left[ \sum_{j=1}^n \frac{f_j'(x)}{f_j(x)} \right]}.$</p>
         <p>Use esta fórmula y la expresión encontrada para $M_S(t)$ en el modelo individual de riesgo para encontrar nuevamente $E(S)$ y $\text{Var}(S)$.</p>
-    </div>
+    </div> -->
     
     <div class="nota-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Para un riesgo $S$ que sigue el modelo individual demuestre que:</p>
-        <ol>
+          $$\displaystyle{E(S^2) = \sum_{j=1}^n q_j E(C_j^2) + \sum_{i \neq j} q_i q_j E(C_i)E(C_j)}.$$
+        <!-- <ol>
             <li>$\displaystyle{E(S^2) = \sum_{j=1}^n q_j E(C_j^2) + \sum_{i \neq j} q_i q_j E(C_i)E(C_j)}.$</li><br>
             <li>
                 $\displaystyle{E(S^3) = \sum_{j=1}^n q_j E(C_j^3) + 3 \sum_{i \neq j} q_i q_j E(C_i)E(C_j^2) + \sum_{i,j,k \text{ distintos }} q_i q_j q_k E(C_i)E(C_j)E(C_k)}.$
             </li><br>
-        </ol>
+        </ol> -->
     </div>
     
     <div class="nota-box">
@@ -210,11 +162,10 @@
     
     <div class="nota-box">
       <h1 class="number-title-practica">Ejercicio</h1>
-      <p>Para el modelo individual, suponga que $D_j$ tiene distribución $\text{Ber}(q)$, es decir, $q_j = q > 0$ es constante. Encuentre la distribución del riesgo $S$ cuando $n = 3$ y $C_j$ tiene la siguiente distribución de probabilidad:</p>
-      <p>
-          $\displaystyle{P(C_j = 1) = 0.6,}$<br>
-          $\displaystyle{P(C_j = 2) = 0.3,}$<br>
-          $\displaystyle{P(C_j = 3) = 0.1.}$
+      <p>Para el modelo individual, suponga que $D_j$ tiene distribución $\text{Ber}(q)$, es decir, $q_j = q > 0$ es constante. Encuentre la distribución del riesgo $S$ cuando $n = 3$ y $C_j$ tiene la siguiente distribución de probabilidad:
+          $\displaystyle{P(C_j = 1) = 0.6}$, 
+          $\displaystyle{P(C_j = 2) = 0.3}$,
+          $\displaystyle{P(C_j = 3) = 0.1}.$
       </p>
   </div>
   
@@ -222,28 +173,44 @@
       <h1 class="number-title-practica">Ejercicio</h1>
       <p>Considere un portafolio de 21 pólizas individuales de seguros de vida válidas por un año como se indica en la tabla que aparece abajo. Usando el modelo individual calcule $E(S)$ y $\text{Var}(S)$.</p>
       <p>
-          <table border="1">
-              <thead>
-                  <tr>
-                      <th>Tasa de mortalidad $q_j$</th>
-                      <th>Suma asegurada</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>0.04</td>
-                      <td>1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;1</td>
-                  </tr>
-                  <tr>
-                      <td>0.05</td>
-                      <td>0&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;3</td>
-                  </tr>
-                  <tr>
-                      <td>0.06</td>
-                      <td>1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;4</td>
-                  </tr>
-              </tbody>
-          </table>
+        <table border="1" cellspacing="0" cellpadding="5" style="border-collapse: collapse; text-align: center;">
+          <thead>
+              <tr>
+                  <th rowspan="2">Tasa de mortalidad <i>q<sub>j</sub></i></th>
+                  <th colspan="4">Suma asegurada</th>
+              </tr>
+              <tr>
+                  <th>$20 000</th>
+                  <th>$30 000</th>
+                  <th>$40 000</th>
+                  <th>$50 000</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>0.04</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>0.05</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>0.06</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>4</td>
+              </tr>
+          </tbody>
+      </table>
+      
       </p>
   </div>
   
@@ -283,10 +250,230 @@
               </tbody>
           </table>
       </p>
-  </div> -->
+  </div>
+
+
+      <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>Considere el modelo individual de riesgo para una cartera de $n = 56$ asegurados divididos en
+          cinco subgrupos de la siguiente forma: 11 asegurados con probabilidad de reclamación $q = 0.01$,
+          7 asegurados con $q = 0.015$, 20 asegurados con $q = 0.02$, 10 asegurados con $q = 0.025$ y 
+          8 asegurados con $q = 0.03$. Todos ellos con suma asegurada de $\$100\,000$. Calcule el valor esperado 
+          del agregado de reclamaciones del riesgo correspondiente a esta cartera de asegurados.</p>
+    </div>
+    
+    <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>Para el modelo individual, suponga que $D_j$ tiene distribución $\text{Ber}(q)$, 
+          es decir, $q_j = q > 0$ es constante, y que cada reclamación $C_j$ tiene distribución
+          $\text{exp}(\lambda)$. Encuentre la distribución de probabilidad del riesgo $S$.</p>
+    </div>
+    
+    <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>Considere el modelo individual de riesgo $S = \displaystyle{\sum_{j=1}^{n} D_j C_j}$, 
+          en donde $C_1, C_2, \ldots, C_n$ son constantes posiblemente distintas todas ellas, y 
+          cada $D_j$ tiene distribución $\text{Ber}(q_j)$ para $j = 1, 2, \ldots, n$.</p>
+        <ol>
+            <li>
+                Demuestre que la función de probabilidad de la variable $D_j C_j$ es 
+                \[
+                \displaystyle{f_{D_j C_j}(x) =
+                \begin{cases} 
+                1 - q_j, & \text{si } x = 0, \\ 
+                q_j, & \text{si } x = C_j, \\ 
+                0, & \text{en otro caso.} 
+                \end{cases}}
+                \]
+                <br>
+            </li>
+            <li>
+                Defina $S_j = S_{j-1} + D_j C_j$ para $j = 2, 3, \ldots, n$ y $S_1 = D_1 C_1$. Demuestre que la función de probabilidad de la variable $S_j$ puede calcularse recursivamente de la siguiente forma: para $j = 2, 3, \ldots, n$,
+                \[
+                \displaystyle{f_{S_j}(x) = (1 - q_j) f_{S_{j-1}}(x) + q_j f_{S_{j-1}}(x - C_j).}
+                \]
+                <br>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="nota-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>Considere el modelo individual de riesgo en donde todas las tasas de muerte $q_j$ son una misma probabilidad $q$ y los montos de las reclamaciones son iguales a 1. Verifique que las fórmulas generales de la Proposición 1.2 se reducen a las de la distribución binomial$(n, q)$, es decir,</p>
+        <ol>
+            <li>
+                $\displaystyle{E(S) = nq.}$
+            </li><br>
+            <li>
+                $\displaystyle{\text{Var}(S) = nq(1 - q).}$
+            </li><br>
+            <li>
+              $\displaystyle{\text{M}_{D_{j}C_{j}}(t) = 1-q + q\mathrm{e}^{t}}$
+            </li><br>
+            <li>
+              $\displaystyle{\text{M}_{S}(t) = \left(1-q + q\mathrm{e}^{t}\right)^{n}}$
+            </li>
+            
+        </ol>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p>
+        Se define la <b>función generadora de probabilidad</b> de una variable aleatoria discreta $X$ como:
+        $$\mathrm{P}_{X}(t) \colon= \mathbb{E}\left( t^{X} \right)$$
+      </p>
+
+      <p>Considera el modelo colectivo de riesgo en donde las reclamaciones son discretas con 
+        valores en $\{0,1,2, \ldots \}$. Suponiendo las existencia de las funciones involucradas demuestra 
+        que se cumple la identidad
+        $$\mathrm{P}_{S}(t) = \mathrm{P}_{N}\left( \mathrm{P}_{X}(t)\right)$$
+      </p>
+    </div>
+
+   <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p>Si el riesgo $S$ en el modelo colectivo tiene distribución $\mathrm{Bin\, Comp}(n,p,G)$. Prueba que
+        <ol>
+          <li>$\mathbb{E}[S] =  np\mathbb{E}[Y]$</li><br>
+          <li>$\mathbb{E}\left[S^{2}\right] = np \left( \mathbb{E}\left[Y^{2}\right]  + (n-1) p \left(\mathbb{E}\left[Y\right]\right)^{2} \right)$</li><br>
+          <li>$\mathrm{Var}[S] = np \left( \mathbb{E}\left[Y^{2}\right]  - p \left(\mathbb{E}\left[Y\right]\right)^{2} \right)$</li><br>
+          <li>$\mathrm{M}_{S}(t) =\displaystyle{ \left(\displaystyle{ 1 -p + p\mathrm{M}_{Y}(t)} \right)^{n}}$</li>
+        </ol>
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p>
+        Sean $S_{1}$ y $S_{2}$ dos riesgos independientes con distribución binomial compuesta con
+         parámetros $(n_1, p, G)$ y $n_2, p, G)$ respectivamente. Demuestre que el riesgo $S_1 + S_2$ 
+         también sigue una distribución binomial compuesta con parámetros   $(n_1+   n_2, p, G)$ . 
+      </p>
+    
+    </div>
+
+
+
+ 
+
+    
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p>Si el riesgo $S$ en el modelo colectivo tiene distribución $\mathrm{Bin\, Neg\, Comp}(r,p)$. Prueba que
+        <ol>
+          <li>$\mathbb{E}[S] = r \left( \displaystyle{\frac{1}{p} -1} \right) \mathbb{E}[Y]$</li><br>
+          <li>$\mathbb{E}\left[S^{2}\right] = r \left( \displaystyle{\frac{1}{p} -1} \right) \left[ \mathbb{E}\left[Y^{2}\right] + (r+1)\displaystyle{\left(\frac{1}{p} -1\right)} \left(\mathbb{E}\left[Y\right]\right)^{2} \right]$</li><br>
+          <li>$\mathrm{Var}[S] = r \left( \displaystyle{\frac{1}{p} -1} \right) \left[ \mathbb{E}\left[Y^{2}\right] + \displaystyle{\left(\frac{1}{p} -1\right)} \left(\mathbb{E}\left[Y\right]\right)^{2} \right]$</li><br>
+          <li>$\mathrm{M}_{S}(t) =\displaystyle{ \left(\displaystyle{ \frac{p}{1 - (1-p)\mathrm{M}_{Y}(t)} }\right)^{r}}$</li>
+        </ol>
+      </p>
+    </div>
+
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p>Si el riesgo $S$ en el modelo colectivo tiene distribución $\mathrm{Poisson\, Comp}(\lambda,G)$. Prueba que
+        <ol>
+          <li>$\mathbb{E}[S] = \lambda \mathbb{E}[Y]$</li><br>
+          <li>$\mathbb{E}\left[S^{2}\right] = \lambda \mathbb{E}[Y^{2}] + \lambda^{2}\left(\mathbb{E}[Y]\right)^{2}$</li><br>
+          <li>$\mathrm{Var}[S] = \lambda \mathbb{E}\left[Y^{2} \right]$</li><br>
+          <li>$\mathrm{M}_{S}(t) = \exp\left( \lambda \left( \mathrm{M}_{Y}(t) -  1\right) \right)$</li>
+        </ol>
+      </p>
+    </div>
+
+
+
+    <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <p>Sea $S = \displaystyle{\sum_{j=1}^{N} Y_{j}}$  el riesgo en el modelo colectivo. Si $N$ tiene distribución 
+        $\mathrm{Poisson}(\Lambda)$ en donde $\Lambda$ es una variable aleatoria con función de distribución $F_{\lambda}(\lambda)$,
+        prueba que 
+        <ol>
+          <li>$\mathbb{P}(N=n) = \displaystyle{\int_{0}^{\infty} \mathrm{e}^{-\lambda} \frac{\lambda^{n}}{n!} } dF_{\Lambda}(\lambda)$</li><br>
+          <li>$\mathbb{E}\left[S\right] = \mathbb{E}[\Lambda]\mathbb{E}[Y]$</li><br>
+          <li>$\mathbb{E}\left[S^{2}\right] = \mathbb{E}\left[\Lambda\right] \mathbb{E}\left[Y^{2}\right] + \mathbb{E}\left[\Lambda^{2}\right]\left(\mathbb{E}[Y]\right)^{2}$</li><br>
+          <li>$\mathrm{Var}[S] = \mathrm{Var}[\Lambda]\mathbb{E}\left( \left[Y\right]\right)^{2}   + \mathbb{E}\left[Y\right]  \mathbb{E}\left[Y^{2}\right]$</li><br>
+          <li>$\mathrm{M}_{S}(t) = \mathrm{M}_{\Lambda}\left(  \mathrm{M}_{Y}(t) -  1 \right)$</li>
+        </ol>
+      </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>Sean $F_1(x)$ y $F_2(x)$ dos funciones de distribución con funciones generadoras de momentos $M_1(t)$ y $M_2(t)$ respectivamente. Demuestre que para cualquier $\alpha \in [0, 1]$, la función $\alpha F_1(x) + (1 - \alpha) F_2(x)$ es una función de distribución cuya función generadora de momentos asociada es $\alpha M_1(t) + (1 - \alpha) M_2(t)$. Este resultado fue utilizado en el análisis de la suma de dos riesgos con distribución Poisson compuesta.</p>
+  </div>
   
+  <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>Sean $S_1, \ldots, S_n$ riesgos independientes con distribución Poisson compuesta con parámetros $\lambda_1, \ldots, \lambda_n$, respectivamente. Suponga que los montos de las reclamaciones de estos riesgos son $Y^{(1)}, \ldots, Y^{(n)}$, con función de distribución $G_1(x), \ldots, G_n(x)$, respectivamente. Demuestre que el riesgo 
+      \[
+      \displaystyle{S = S_1 + \cdots + S_n}
+      \]
+      también sigue una distribución Poisson compuesta con parámetro $\lambda = \lambda_1 + \cdots + \lambda_n$, y la función de distribución de las reclamaciones es
+      \[
+      \displaystyle{G(x) = \frac{\lambda_1}{\lambda} G_1(x) + \cdots + \frac{\lambda_n}{\lambda} G_n(x).}
+      \]
+      </p>
+  </div>
+  
+  <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>Sean $S_1$ y $S_2$ dos riesgos independientes, el primero con distribución $\text{Poisson comp}(\lambda_1, F_1)$ con $\lambda_1 = 50$, y el segundo con distribución $\text{Poisson comp}(\lambda_2, F_2)$ con $\lambda_2 = 100$, en donde 
+      \[
+      \displaystyle{F_1(x) = \min\{x, 1\} \text{ para } x \geq 0,}
+      \] 
+      y 
+      \[
+      \displaystyle{F_2(x) = 1 - e^{-x} \text{ para } x \geq 0.}
+      \] 
+      Encuentre la distribución de $S = S_{1} + S_{2}$ y la función de distribución de las reclamaciones de 
+      riesgo.
+      </p>
+  </div>
 
+  <div class="nota-box">
+    <h1 class="number-title-practica">Ejercicio</h1>
+    <p>
+        Sean $S_1$ y $S_2$ dos riesgos independientes con distribución Poisson compuesta, el primero $\text{Poisson comp}(\lambda_1, F_1)$ con $\lambda_1 = 10$, y el segundo $\text{Poisson comp}(\lambda_2, F_2)$ con $\lambda_2 = 20$. Suponga que las reclamaciones de ambos riesgos son de magnitud 50 o 100, y por lo tanto tienen la siguiente función de distribución:
+        \[
+        \displaystyle{F(x) =
+        \begin{cases} 
+        0 & \text{si } x < 50, \\
+        p & \text{si } 50 \leq x < 100, \\
+        1 & \text{si } x \geq 100.
+        \end{cases}}
+        \]
+        Suponga que el parámetro $p$ es igual a $1/2$ para el primer riesgo y es $1/3$ para el segundo riesgo. Encuentre la distribución de $S = S_1 + S_2$ y la función de distribución de las reclamaciones del riesgo $S$.
+    </p>
+  </div>
 
+  <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>
+          Sea $X_1, X_2, \ldots$ una sucesión de variables aleatorias independientes, cada una de ellas con distribución $\text{Ber}(p)$ y sea $X_0 = 0$. Sea $N$ otra variable aleatoria con distribución $\text{Poisson}(\lambda)$ independiente de las anteriores. Defina la variable
+          \[
+          \displaystyle{X = \sum_{i=0}^N X_i.}
+          \]
+          Demuestre que $X$ tiene distribución $\text{Poisson}(\lambda p)$. Esta variable tiene la siguiente interpretación: si $N$ representa el total de siniestros ocurridos y cada siniestro es reportado con probabilidad $p$, entonces $X$ representa el total de siniestros ocurridos y reportados.
+      </p>
+  </div>
+
+  <!-- <div class="nota-box">
+      <h1 class="number-title-practica">Ejercicio</h1>
+      <p>
+          Sea $Y$ una variable aleatoria con función de distribución $F(y)$, y sean $a < b$ dos números tales que $F(a) < F(b)$. Demuestre que la función de distribución condicional de $Y$ dado el evento $(Y \in (a, b])$ es
+          \[
+          \displaystyle{F(y \mid Y \in (a, b]) = 
+          \begin{cases} 
+          0 & \text{si } y < a, \\
+          \frac{F(y) - F(a)}{F(b) - F(a)} & \text{si } a \leq y \leq b, \\
+          1 & \text{si } y > b.
+          \end{cases}}
+          \]
+      </p>
+      <p>
+        Aplique este resultado al caso cuando Y tiene distribuci ́on exp α . Encuentre y grafique ambas funciones de distribuci ́on: la original y la condicional.
+      </p>
+  </div> -->
+
+  
+    
 
 
   <div class="nota-box">
