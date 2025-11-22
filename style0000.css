@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap'); /* font-family: 'Pangolin', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap'); /* font-family: 'Gelasio', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');/* font-family: 'Hina Mincho', serif; */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');/* font-family: 'EB Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');/* font-family: 'Josefin Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');/* font-family: 'Caprasimo', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');/* font-family: 'Mate SC', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');/* font-family: 'Fredericka the Great', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');/* font-family: 'Special Elite', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');/* font-family: 'Neucha', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tangut&display=swap');/* font-family: 'Noto Serif Tangut', serif; */
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap'); /* font-family: 'GFS Neohellenic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap'); /* font-family: 'Oldenburg', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');/* font-family: 'Dosis', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');/* font-family: 'Urbanist', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');/* font-family: 'Space Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+/* font-family: 'Josefin Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* font-family: "VT323", monospace;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /* font-family: "Graduate", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap'); /* font-family: "Wellfleet", monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap'); /* font-family: "Vast Shadow", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap'); /* font-family: "Montagu Slab", serif;*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&'); /*font-family: "Macondo", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); /*font-family: "Nanum Pen Script", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset y estilos base */
+
+html {
+  font-size: 16px; /* Establece un tamaño base consistente */
+}
+
+body {
+  font-size: 1rem; /* Usa unidades rem para escalamiento consistente */
+  margin-top: 0.25%;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+/* html, body {
+  margin-top: 0.25%;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  line-height: 1.4em;
+  font-weight: 400;
+  font-size: 100%;
+  font-style: normal;
+} */
+
+/* Fondos */
+.fondo-body {
+  background: rgb(252, 252, 244);
+  color: rgb(0, 0, 0);
+}
+
+.fondo {
+  background: rgb(183, 227, 245);
+  color: black;
+}
+
+/* Logo superior */
+.logo_superior_umar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo_superior_umar img {
+  width: 80%;
+  height: auto;
+  max-width: 110px;
+}
+
+/* Flexbox */
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align-content no es necesario cuando usas flex-direction: column */
+  width: 100%;
+  /* Considera añadir min-height si necesitas un contenedor con altura mínima */
+}
+
+.resp-box {
+  display: none; /* Se mostrará con JS al hacer click */
+  width: 100%; /* Ocupará todo el ancho del links-box */
+  margin: 10px 0;
+}
+
+.flex-box {
+  display: none;
+  color: black;
+  margin: 0 auto; /* Simplifica los márgenes */
+  text-align: left;
+  /* Considera añadir un padding básico para mejor legibilidad */
+  padding: 8px 0;
+}
+
+.flex-box {
+  margin-left: 0; /* Específico para esta clase */
+}
+
+
+/* Botones */
+
+.respButton {
+  font-family: "Bitter", serif;
+  border-radius: 100px;
+  border: 2px solid rgba(52, 173, 249, 0.718);
+  background: rgb(252, 252, 244);
+  font-size: 1rem; /* Mejor usar unidades relativas */
+  width: 100%;
+  font-weight: 600;
+  padding: 8px 16px; /* Añade padding para mejor apariencia */
+  cursor: pointer; /* Indica que es clickeable */
+  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
+
+.respButton:hover, .respButton:focus, .respButton:active {
+  background-color: rgb(238, 250, 255);
+  transform: scale(1.05); /* Efecto más sutil */
+  /* border-radius ya está definido arriba, no necesita repetirse */
+}
+.hvr-grow {
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  transition: transform 0.3s ease; /* Simplificado */
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  transform: scale(1.05); /* Efecto más sutil */
+}
+
+.video {
+  border: 5px solid rgba(52, 173, 249, 0.718);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px auto; /* Simplificado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  /* Considera añadir overflow:hidden si el contenido puede desbordar */
+}
+.video iframe {
+  width: 100%;
+  height: 400px; /* Altura fija o podrías usar aspect-ratio */
+  border: none;
+  display: block;
+}
+
+.video a {
+  text-decoration: none;
+  display: block; /* Mejor manejo del espacio clickeable */
+  width: 100%;
+}
+
+
+.flexbox-linea {
+  flex-direction: column;
+}
+
+/* Menú superior */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.small-nav {
+  padding: 10px;
+}
+
+.top-nav {
+  text-align: center;
+  padding: 1%;
+  font-size: 115%;
+}
+
+.top-nav ul {
+  margin: 0 0 0.5% 0;
+  padding: 0.65%;
+  border-radius: 25px;
+  background-color: rgb(228, 255, 255);
+  width: 100%;
+}
+
+.top-nav li {
+  display: inline;
+  padding: 1.75%;
+}
+
+.top-nav a {
+  display: inline-block;
+  padding: 0.5%;
+  font-size: 115%;
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(25, 25, 112);
+  font-family: 'IM Fell English', serif;
+}
+
+.top-nav a:hover {
+  background-color: rgb(211, 211, 211);
+  font-size: 110%;
+  font-weight: 400;
+  color: rgb(0, 78, 148);
+  border-radius: 10px;
+  transition: all 0.75s ease;
+}
+
+.small-nav button {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgb(250, 239, 210);
+}
+
+.small-nav button:hover {
+  background-color: #aef1c8;
+  border-radius: 10px solid #aef1c8;
+}
+
+/* Títulos */
+.title {
+  font-size: 180%;
+  font-weight: 800; 
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  color: rgb(173, 113, 43);
+  width: 100%;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  font-size: 160%;
+  font-weight: 600;
+  margin: 0 0 5em 0;
+  padding: 1%;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: rgb(3, 89, 165);
+  display: inline;
+}
+
+.subtitulo {
+  font-size: 150%;
+  font-weight: 600;
+  margin: 0 0 5em 0;
+  padding: 1%;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: rgb(3, 89, 165);
+  display: inline;
+}
+
+.subtitle {
+  font-size: 150%;
+  font-weight: 600; 
+  text-align: center;
+  font-family: 'Mate SC', serif; 
+  padding: 0;
+  margin: 0;
+  color: rgb(3,66,139); 
+  width: 100%;
+}
+
+.subsubtitle {
+  font-size: 130%;
+  font-weight: 600; 
+  text-align: center;
+  font-family: 'Mate SC', serif;
+  padding: .25%;
+  margin: 0.25% 0 0 0;
+  color: rgb(0, 124, 191);
+  width: 100%;
+}
+
+.subsubtitle a, .subsubtitle a:visited {
+  text-decoration: none;
+}
+
+.subsubtitle a:visited {
+  color: rgb(0, 0, 0);
+}
+
+.title_nombre {
+  font-weight: 800;
+  font-family: 'IM Fell English', serif;
+  margin: 0;
+  text-align: center;
+  color: rgb(105,105,105);
+  width: 100%;
+  letter-spacing: .85px;
+  font-size: 95%;
+}
+
+.subtitle_nombre {
+  font-family: 'Shippori Mincho B1', serif;
+  margin: 0;
+  text-align: center;
+  color: rgb(105,105,105);
+  width: 100%;
+  font-size: 90%;
+}
+
+.contenedor_titulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+
+/* Títulos numerados */
+body.card {
+  counter-reset: listaCounter 1 sublistaCounter subsublistaCounter;
+}
+
+h1.page-title, h1.page-number-title {
+  font-size: 140%;
+  text-align: center;
+  font-family: 'Gelasio', serif;
+  margin: 1% 0 0 0;
+  padding: 0;
+  width: 100%;
+  color: rgb(3,66,139);
+}
+
+h1.page-number-title {
+  margin-bottom: 2%;
+}
+
+h1.page-number-title::before {
+  font-size: normal;
+  counter-increment: temaCounter; 
+}
+
+h1.page-subtitle {
+  font-size: 220%;
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  margin: 1% 0 -1.5% 0;
+  padding: 0;
+  color: rgb(3, 89, 165);
+}
+
+h1.tema-title {
+  font-size: 210%;
+  text-align: center;
+  font-family: 'Gelasio', serif;
+  padding: 0;
+  width: 100%;
+  color: rgb(184,134,11);
+}
+
+h1.tema-number-title {
+  font-size: 140%;
+  font-family: 'Gelasio', serif;
+  margin: 0 0 0 3%;
+  padding: 0;
+  color: rgb(3, 89, 165);
+  line-height: 1.1;
+}
+
+h1.tema-number-title::before {
+  counter-increment: temaCounter; 
+  content: "§ Tema " counter(temaCounter)". ";
+}
+
+h1.block-number-title {
+  font-size: 190%;
+  text-align: center;
+  font-family: 'Gelasio', serif;
+  margin: 0 0 3% 0;
+  padding: 0;
+  width: 100%;
+  color: rgb(3, 89, 165);
+}
+
+h1.block-number-title::before {
+  font-size: normal;
+  content: "§ Tema " counter(temaCounter)". ";
+}
+
+h1.tema-subtitle {
+  font-size: 220%;
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  margin: 1% 0 -1.5% 0;
+  padding: 0;
+  color: rgb(3, 89, 165);
+}
+
+h1.number-title {
+  font-size: 145%;
+  font-weight: 600;
+  margin: 0 0 2.5% 0;
+  padding: 0;
+  text-align: left;
+  font-family: 'EB Garamond', serif;
+  color: rgb(3, 89, 165);
+  line-height: 1.1;
+}
+
+h1.number-title::before {
+  font-family: 'EB Garamond', serif;
+  counter-increment: sectionCounter;
+  content: counter(temaCounter)"."counter(sectionCounter)".";
+}
+
+h2.number-title {
+  font-size: 130%;
+  font-weight: 600;
+  margin: 1.5% 0 2.5% 0;
+  padding: 0;
+  font-family: 'Gelasio', serif;
+  color: rgb(3, 89, 165);
+  line-height: 1.1;
+}
+
+h2.number-title::before {
+  counter-increment: subsectionCounter;
+  font-family: 'Hina Mincho', serif;
+  content: counter(temaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
+}
+
+/* Títulos para prácticas */
+h1.page-title-practica {
+  font-size: 140%;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Gelasio', serif;
+  padding: 0;
+  width: 100%;
+  color: rgb(184,134,11);
+}
+
+h1.number-title-practica {
+  font-size: 160%;
+  margin: -0.5% 0 0 0;
+  padding: 0.25%;
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Hina Mincho', serif;
+  color: rgb(0, 78, 148);
+}
+
+h1.number-title-practica::after {
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: sectionCounter;
+  content: " " counter(temaCounter)"."counter(sectionCounter) ".";
+}
+
+/* Cajas de contenido */
+
+.info-box, .links-box, .info-profesor-box, .definicion-box, 
+.ejercicio-box, .nota-box, .teorema-box, .prop-box, .quiz-box {
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  font-size: 100%;
+  box-shadow: 0px 0px 10px 0px rgb(218,165,32);
+}
+
+.info-box {
+  background: rgb(252, 252, 244);
+  color: black;
+  border: 0px solid rgb(218,165,32);
+  margin: 2% auto 5% auto;
+  width: 85%;
+  text-align: justify;
+}
+
+.links-box {
+  background: rgb(252, 252, 244);
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto 5% auto;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.links-box a { 
+  font-size: 125%;
+  padding: 0px;
+  margin: 10px auto 10px auto;
+  font-weight: 500;
+  color: rgb(255, 0, 0); 
+}
+
+.links-box a:visited {
+  color: rgb(0, 0, 139); 
+}
+
+.info-profesor-box {
+  background: rgb(252, 252, 244);
+  margin: 3% auto 3.6% auto;
+  width: 85%;
+  font-size: 125%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.definicion-box {
+  background: rgb(255, 249, 205);
+  border: 10px solid rgba(229,180,255,0.5);
+  margin: 50px auto;
+  font-family: "Lucida Console", Courier, monospace;
+  width: 70%;
+  box-shadow: 10px 10px 15px rgb(112, 123, 124);
+}
+
+.ejercicio-box { 
+  background: rgb(218, 237, 245);
+  border: 5px solid rgb(0, 120, 175);
+  margin: 50px auto;
+  width: 90%;
+  box-shadow: 2px 2px 15px 2px rgb(31, 147, 201);
+}
+
+.nota-box {
+  color: black;
+  border: 0px solid rgb(0, 78, 148); 
+  margin: 50px auto;
+  font-size: 105%;
+  text-align: justify;
+  width: 90%;
+  box-shadow: 0px 0px 10px 0px rgb(0, 166, 255); 
+}
+
+.teorema-box {
+  background: rgb(218, 237, 245);
+  border: 5px solid rgb(0, 120, 175);
+  margin: 50px auto;
+  width: 80%;
+  box-shadow: 2px 2px 15px 2px rgb(31, 147, 201);  
+}
+
+
+.prop-box {
+  background: rgb(255, 249, 205);
+  border: 10px solid rgba(255,102,160,0.5);
+  margin: 50px auto;
+  width: 70%;
+  box-shadow: 10px 10px 15px rgb(112, 123, 124);
+}
+
+.quiz-box {
+  background: rgb(255, 249, 205);
+  border: 10px solid rgba(175,122,197,0.5);
+  margin: 50px auto;
+  width: 70%;
+  box-shadow: 10px 10px 15px rgb(112, 123, 124);
+}
+
+.quiz-box-dark {
+  background: rgb(33, 47, 60);
+  color: rgb(165, 105, 189);
+  border: 10px solid rgba(175,122,197,0.5);
+  margin: 50px auto;
+  width: 70%;
+  box-shadow: 10px 10px 15px rgb(112, 123, 124);
+}
+
+.algoritmo-box {
+  background: rgb(218, 237, 245);
+  border-radius: 15px;
+  padding: 1px;
+  border-top: 0px solid rgb(218, 237, 245);
+  border-bottom: 0px solid rgb(218, 237, 245);
+  border-right: 10px solid rgb(218, 237, 245);
+  border-left: 0px solid rgb(218, 237, 245);
+  margin: 0 auto;
+  font-size: 20px;
+  width: 85%;
+  box-shadow: 1px 1px 5px 1px rgb(31, 147, 201);
+}
+
+.pseudocodigo-box {
+  background: rgb(218, 237, 245);
+  border-radius: 20px;
+  padding: 1px;
+  border-left: 20px solid rgb(218, 237, 245);
+  margin: 0 auto;
+  font-size: 20px;
+  width: 40%;
+  box-shadow: 1px 1px 5px 1px rgb(31, 147, 201);
+}
+
+
+.imagen-box {
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0 auto; /* Simplificado */
+  display: block; /* Asegura comportamiento consistente */
+  max-width: 100%; /* Mejor que width:auto para responsividad */
+  height: auto;
+}
+/* Tablas */
+.tabla-funciones {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Bitter", serif;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  border-collapse: collapse;
+  width: auto;
+  max-width: 100%;
+}
+
+.nombre-funcion {
+  text-align: center;
+}
+
+.nombre-funcion2 {
+  text-align: left;
+}
+
+.nombre-funcion a { 
+  padding: 10px;
+  font-weight: 500;
+  color: rgb(255, 0, 0); 
+}
+
+.nombre-funcion a:visited {
+  color: rgb(0, 0, 139); 
+}
+
+.tabla-funciones thead {
+  font-size: 125%;
+  font-family: 'Hina Mincho', serif;
+  color: rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border: 1.7px solid rgb(3, 89, 165); 
+  text-align: center;
+  padding: 9px;
+  word-wrap: break-word;
+}
+
+thead tr:nth-child(even) {
+  background-color: rgb(221, 221, 220);
+}
+
+thead tr:nth-child(odd) {
+  background-color: rgb(252, 252, 244);
+}
+
+td {
+  border: 1.7px solid rgb(3, 89, 165);  
+  text-align: justify;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(196, 231, 255);
+}
+
+/* Columnas */
+.five-column { columns: 5; }
+.four-column { columns: 4; }
+.three-column { columns: 3; }
+.two-column { columns: 2; }
+
+/* Listas mejoradas */
+ul, ol {
+  padding-left: 2rem;
+  /* margin-bottom: 0.5rem; */
+}
+
+ul li, 
+ol li {
+  line-height: 1.8; /* o el valor que prefieras */
+}
+
+
+/* Listas */
+ol li::marker {
+  font-size: 100%;
+  font-weight: 500;
+  color: rgb(0, 78, 148);
+  font-family: "Georgia", serif;
+  /* content: counter(list-item) ") ";  */
+  /* font-family: "Roboto", sans-serif */
+}
+
+.lista {
+  counter-reset: listaCounter;
+  list-style-type: none;
+}
+
+.lista li { 
+  counter-increment: listaCounter;
+}
+
+.lista li::marker, .sublista li::marker, 
+.subsublista li::marker, .subsubsublista li::marker {
+  font-weight: bold;
+}
+
+.lista li::before {
+  font-weight: bold;
+  content: " " counter(listaCounter)".-";
+}
+
+.lista li::after, .sublista li::after, 
+.subsublista li::after, .subsubsublista li::after {
+  content: " ";
+}
+
+.sublista {
+  counter-reset: sublistaCounter;
+  list-style-type: none;
+}
+
+.sublista li {
+  counter-increment: sublistaCounter;
+}
+
+.sublista li::before {
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)".- ";
+}
+
+.subsublista {
+  counter-reset: subsublistaCounter;
+  list-style-type: none;
+}
+
+.subsublista li {
+  counter-increment: subsublistaCounter;
+}
+
+.subsublista li::before {
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)"."counter(subsublistaCounter)".- ";
+}
+
+.subsubsublista {
+  counter-reset: subsubsublistaCounter;
+  list-style-type: none;
+}
+
+.subsubsublista li {
+  counter-increment: subsubsublistaCounter;
+}
+
+.subsubsublista li::before {
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)"."counter(subsublistaCounter)"."counter(subsubsublistaCounter)".- ";
+}
+
+
+strong, b {
+  font-weight: 600;
+}
