@@ -717,24 +717,19 @@ tbody tr:nth-child(odd) {
 
 /* Listas mejoradas */
 ul, ol {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   /* margin-bottom: 0.5rem; */
-}
-
-ul li, 
-ol li {
-  line-height: 1.8; /* o el valor que prefieras */
 }
 
 
 /* Listas */
 ol li::marker {
   font-size: 100%;
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(0, 78, 148);
   font-family: "Georgia", serif;
   /* content: counter(list-item) ") ";  */
-  /* font-family: "Roboto", sans-serif */
+   /* font-family: "Courier New", monospace; */
 }
 
 .lista {

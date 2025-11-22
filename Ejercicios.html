@@ -101,11 +101,36 @@
   
 
       <div class="links-box" style = "font-family: 'Oldenburg', cursive;">
-          
+        
+       <a  href="https://pjhh-umar.github.io/Teoria_Riesgo/Ejercicios/EP2.html"> Ejercicios propuestos segundo examen parcial
        <!-- <a  href="https://pjhh-umar.github.io/Teoria_Riesgo/Ejercicios/EP1.html"> Ejercicios propuestos primer examen parcial</a> -->
-       <!-- <a  href="https://pjhh-umar.github.io/Teoria_Riesgo/Ejercicios/EP2.html"> Ejercicios propuestos segundo examen parcial</a> -->
+       <!--</a> -->
        <!-- <a  href="https://pjhh-umar.github.io/Teoria_Riesgo/Ejercicios/EP3.html"> Ejercicios propuestos tercer examen  parcial</a> -->
        
       </div>   
+
+          <!-- Donde aparecerá la fecha de la última modificación -->
+<footer>
+  <center>
+   <p id="ultima-actualizacion"></p>
+  </center>
+</footer>
+<script>
+// Obtenemos la fecha y hora de la última modificación del documento
+const fechaModificacion = new Date(document.lastModified);
+
+// Opciones para formatear la fecha (por ejemplo, DD/MM/AAAA)
+const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
+const fechaFormateada = fechaModificacion.toLocaleDateString('es-ES', opcionesFecha);
+
+// Obtenemos la hora (HH:MM:SS)
+const horaFormateada = fechaModificacion.toLocaleTimeString('es-ES', {
+    hour: '2-digit', minute: '2-digit'
+});
+
+// Insertamos la fecha y la hora en el elemento con el ID "ultima-modificacion"
+document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
+</script>
+
   </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC >
 
 <html lang="es">
@@ -12,11 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- This part is to load main.js -->
-    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 
+    <!-- CSS -->
 
-    
-
+    <link rel="stylesheet" , href="./style.css" />
 
     <!-- Next part is for new coomands -->
     <script>
@@ -33,7 +31,6 @@
       };
     </script>
 
-    
     <!-- This part restart counter of cards to start at n+1 -->
     <style>
       /* body.number-title
@@ -476,22 +473,6 @@
     
 
 
-  <div class="nota-box">
-    <h1 class="number-title-practica">Ejercicio</h1>
-    <p>
-      
-    </p>
-  </div>
-
-  
-  
-  
-  
-  
-  
-
-
-  
   
    <!-- Donde aparecerá la fecha de la última modificación -->
    <footer>
@@ -516,30 +497,9 @@
   document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
 </script>
 
-<!-- Donde aparecerá la fecha de la última modificación -->
-<footer>
-  <center>
-   <p id="ultima-actualizacion"></p>
-  </center>
-</footer>
-<script>
-// Obtenemos la fecha y hora de la última modificación del documento
-const fechaModificacion = new Date(document.lastModified);
-
-// Opciones para formatear la fecha (por ejemplo, DD/MM/AAAA)
-const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
-const fechaFormateada = fechaModificacion.toLocaleDateString('es-ES', opcionesFecha);
-
-// Obtenemos la hora (HH:MM:SS)
-const horaFormateada = fechaModificacion.toLocaleTimeString('es-ES', {
-    hour: '2-digit', minute: '2-digit'
-});
-
-// Insertamos la fecha y la hora en el elemento con el ID "ultima-modificacion"
-document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
-</script>
 
     
     
 
 </body>
+</html>
