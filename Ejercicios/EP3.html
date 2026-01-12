@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC >
 
 <html lang="es">
@@ -125,8 +123,7 @@
   <div class="nota-box">
   <h1 class="number-title-practica">Ejercicio</h1>
 
-  <p>
-    Las cuatro distribuciones de la clase $(a,b,0)$. Sea $\{p_k : k \geq 0\}$ una distribución de probabilidad en la clase $(a,b,0)$, es decir, se trata de una distribución discreta con soporte el conjunto $\{0,1,\ldots\}$ y tal que cumple la relación
+  <p>Sea $\{p_k : k \geq 0\}$ una distribución de probabilidad en la clase $(a,b,0)$, es decir, se trata de una distribución discreta con soporte el conjunto $\{0,1,\ldots\}$ y tal que cumple la relación
     $\displaystyle{p_k=\left(a+\frac{b}{k}\right)p_{k-1}}$ para $k \geq 1$, en donde $a$ y $b$ son dos constantes. Observe que tomando el caso particular cuando $k=1$, se llega a la conclusión de que las constantes deben satisfacer la desigualdad $a+b \geq 0$.
   </p>
 
@@ -142,12 +139,52 @@
     </li><br>
 
     <li>
-      Observe que si $a+b>0$ y $a<0$, y si la relación iterativa es válida para cualquier $k \geq 1$ como hemos supuesto, entonces necesariamente los valores de las constantes $a$ y $b$ deben ser tales que exista un entero $n \geq 1$ tal que
+      Observe que si $a+b>0$ y $a< 0 $, y si la relación iterativa es válida para cualquier $k \geq 1$ como hemos supuesto, entonces necesariamente los valores de las constantes $a$ y $b$ deben ser tales que exista un entero $n \geq 1$ tal que
       $$\displaystyle{a+\frac{b}{n}>0 \quad \text{y} \quad a+\frac{b}{n+1}=0.}$$
       Y por lo tanto se debe tener que $p_k=0$ para $k=n+1,n+2,\ldots$. De la igualdad anterior obtenga $n=-\displaystyle{\frac{b}{a}}-1$. Compruebe la validez de la ecuación $(2.6)$ para $0 \leq k \leq n$ e incorpore allí el valor de $n$. Concluya que $\{p_k : k \geq 0\}$ es la distribución binomial$(n,p)$ con $p=\displaystyle{\frac{a}{a-1}}$.
     </li><br>
   </ol>
 </div>
+
+<div class="nota-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sea $N$ una variable aleatoria con distribución de probabilidad en la clase $(a,b,0)$.
+  </p>
+
+  <ol>
+    <li>
+      Demuestre que la correspondiente función generadora de probabilidad
+      $P_N(t)=E(t^N)$ satisface la ecuación diferencial
+      $$\displaystyle{(1-at)\,P_N'(t)=(a+b)\,P_N(t).} \qquad (2.7)$$
+    </li><br>
+
+    <li>
+      Demuestre que la solución a la ecuación $(2.7)$ con condición inicial $P_N(1)=1$
+      y para $a \notin \{0,1\}$ es
+      $$\displaystyle{P_N(t)=\left(\frac{1-at}{1-a}\right)^{-(a+b)/a}.}$$
+    </li><br>
+
+    <li>
+      En particular, demuestre que
+      <br>
+      i) $\displaystyle{\mathbb{P}(N=0)=(1-a)^{(a+b)/a}}$ para $a \neq 0$.
+      <br>
+      ii) $\displaystyle{\lim_{a\to 0}\mathbb{P}(N=0)=e^{-b}.}$
+    </li><br>
+  </ol>
+</div>
+
+<div class="nota-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sea $N$ una variable aleatoria con distribución de probabilidad en la clase $(a,b,0)$.
+    A partir de la definición elemental de esperanza, o bien, usando la fórmula $(2.7)$ del ejercicio anterior,
+    demuestre que para $a \neq 1$,
+    $$\displaystyle{E(N)=\frac{a+b}{1-a}.}$$
+  </p>
+</div>
+
 
   
      <!-- Donde aparecerá la fecha de la última modificación -->
